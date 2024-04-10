@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 用友NC bsh.servlet.BshServlet 远程命令执行漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /NCFindWeb?service=IPreAlertConfigService&filename=
+  headers:
+response1:
+  headers:
+  body: WEB-INF
+  code:
+requests2:
+response2:

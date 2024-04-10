@@ -1,0 +1,437 @@
+{
+  "fingerprint": [{
+    "cms": "安恒明御安全网关",
+    "location": "body",
+    "keyword": ["<title>安恒明御安全网关</title>"]
+  },{
+    "cms": "Atlassian Confluence",
+    "location": "body",
+    "keyword": ["confluence-base-url"]
+  },{
+    "cms": "BEA-WebLogic-Server",
+    "location": "body",
+    "keyword": ["<h1>bea weblogic server", "weblogic server", "<h1>welcome to weblogic application", "<h1>bea weblogic server"]
+  },{
+    "cms": "Jenkins",
+    "location": "faviconhash",
+    "keyword": ["81586312"]
+  },{
+    "cms": "华夏erp",
+    "location": "body",
+    "keyword": ["jshERP-boot"]
+  },{
+    "cms": "企望制造ERP系统",
+    "location": "body",
+    "keyword": ["<title>企望制造ERP系统</title>"]
+  },{
+    "cms": "Apache-Spark",
+    "location": "body",
+    "keyword": ["/static/spark-logo"]
+  },{
+    "cms": "瑞友天翼应用虚拟化系统",
+    
+    "location": "body",
+    "keyword": ["CASMain.XGI?cmd=DownLoad"]
+  },{
+    "cms": "Smartbi",
+    "location": "body",
+    "keyword": ["smartbi.gcf.gcfutil"]
+  },{
+    "cms": "Metabase",
+    "location": "body",
+    "keyword": ["<title>Metabase</title>"]
+  },{
+    "cms": "WordPress",
+    "location": "body",
+    "keyword": ["/wp-includes/"]
+  },{
+    "cms": "WordPress",
+    "location": "faviconhash",
+    "keyword": ["1198047028"]
+  },{
+    "cms": "致远OA",
+    "location": "body",
+    "keyword": ["/seeyon/common/"]
+  },{
+    "cms": "致远M1 Server",
+    "location": "body",
+    "keyword": ["<title>M1-Server"]
+  },{
+    "cms": "泛微OA",
+    "location": "faviconhash",
+    "keyword": ["1578525679"]
+  },{
+    "cms": "泛微E-mobile",
+    "location": "faviconhash",
+    "keyword": ["2062026853"]
+  },{
+    "cms": "用友畅捷通",
+    "location": "body",
+    "keyword": ["/tplus/view/login.html"]
+  },{
+    "cms": "用友NC",
+    "location": "faviconhash",
+    "keyword": ["1085941792"]
+  },{
+    "cms": "用友U8CRM",
+    "location": "body",
+    "keyword": ["<TITLE>用友U8CRM</TITLE>"]
+  },{
+    "cms": "用友U8",
+    "location": "body",
+    "keyword": ["用友U8-OA","用友U8+OA"]
+  },{
+    "cms": "用友GRP-U8",
+    "location": "faviconhash",
+    "keyword": ["-299520369"]
+  },{
+    "cms": "用友时空KSOA",
+    "location": "body",
+    "keyword": ["images_index/mainlogo.jpg"]
+  },{
+    "cms": "用友FE协作办公平台",
+    "location": "body",
+    "keyword": ["FE协作办公平台"]
+  },{
+    "cms": "用友NCCloud",
+    "location": "faviconhash",
+    "keyword": ["1596996317","737647198"]
+  },{
+    "cms": "用友移动管理系统",
+    "location": "body",
+    "keyword": ["<span></span>移动系统管理"]
+  },{
+    "cms": "用友畅捷CRM",
+    "location": "body",
+    "keyword": ["<TITLE>畅捷CRM</TITLE>"]
+  },{
+    "cms": "用友U8Cloud",
+    "location": "body",
+    "keyword": ["<title>U8C</title>"]
+  },{
+    "cms": "若依",
+    "location": "body",
+    "keyword": ["ruoyi/login.js"]
+  },{
+    "cms": "Shiro",
+    "location": "header",
+    "keyword": ["rememberMe=deleteMe"]
+  },{
+    "cms": "JumpServer堡垒机",
+    "location": "faviconhash",
+    "keyword": ["-1162630024"]
+  },{
+    "cms": "YApi可视化接口管理平台",
+    "location": "body",
+    "keyword": ["YApi","id=\"yapi\""]
+  },{
+    "cms": "RabbitMQ",
+    "location": "faviconhash",
+    "keyword": ["1064742722"]
+  },{
+    "cms": "ActiveMQ",
+    "location": "body",
+    "keyword": ["<title>Apache ActiveMQ</title>"]
+  },{
+    "cms": "Joomla",
+    "location": "body",
+    "keyword": ["Joomla"]
+  },{
+    "cms": "宏景HCM",
+    "location": "body",
+    "keyword": ["/templates/index/hrlogon.do"]
+  },{
+    "cms": "Nacos",
+    "location": "body",
+    "keyword": ["<title>Nacos</title>"]
+  },{
+      "cms": "JetBrains",
+      "location": "body",
+      "keyword": ["Log in to TeamCity"]
+    },{
+    "cms": "科荣AIO",
+    "location": "body",
+    "keyword": ["changeAccount('8000')"]
+  },{
+    "cms": "JEECG",
+    "location": "body",
+    "keyword": ["jeecg"]
+  },{
+    "cms": "易宝OA",
+    "location": "body",
+    "keyword": ["易宝OA"]
+  },{
+    "cms": "号卡极团分销管理系统",
+    "location": "faviconhash",
+    "keyword": ["-795291075"]
+  },{
+    "cms": "浙大恩特客户资源管理系统",
+    "location": "body",
+    "keyword": ["script/Ent.base.js"]
+  },{
+    "cms": "大商创多用户商城系统",
+    "location": "body",
+    "keyword": ["dsc-choie"]
+  },{
+    "cms": "IP-guard WebServer",
+    "location": "faviconhash",
+    "keyword": ["2030860561"]
+  },{
+    "cms": "通天星CMSV6车载定位监控平台",
+    "location": "body",
+    "keyword": ["808gps"]
+  },{
+    "cms": "快普",
+    "location": "body",
+    "keyword": ["Resource/JavaScript/jKPM6.DateTime.js"]
+  },{
+    "cms": "金和OA",
+    "location": "body",
+    "keyword": ["金和"]
+  },{
+    "cms": "飞企互联-FE企业运营管理平台",
+    "location": "body",
+    "keyword": ["openOfflineIndexWin"]
+  },{
+    "cms": "飞鱼星企业级智能上网行为管理系统",
+    "location": "body",
+    "keyword": ["<title>飞鱼星企业级智能上网行为管理系统</title>"]
+  },{
+    "cms": "大华DSS",
+    "location": "body",
+    "keyword": ["dahuaDefined/headCommon.js","<title>DSS</title>","<meta http-equiv=\"refresh\" content=\"1;URL='/admin'\"/>"]
+  },{
+    "cms": "亿赛通电子文档安全管理系统",
+    "location": "body",
+    "keyword": ["/CDGServer3/index.jsp"]
+  },{
+    "cms": "大华智慧园区综合管理平台",
+    "location": "body",
+    "keyword": ["<meta http-equiv=\"refresh\" content=\"1;URL='/WPMS'\"/>"]
+  },{
+    "cms": "SpringBlade",
+    "location": "body",
+    "keyword": ["https://bladex.vip"]
+  },{
+    "cms": "H3C用户自助服务平台",
+    "location": "body",
+    "keyword": ["window.location.href='/selfservice/index.xhtml'"]
+  },{
+    "cms": "帮管客CRM",
+    "location": "body",
+    "keyword": ["<p id=\"admintips\" >"]
+  },{
+    "cms": "蓝凌EIS智慧协同平台",
+    "location": "body",
+    "keyword": ["Global/Pages/CheckPage/IKey.aspx?user"]
+  },{
+    "cms": "aiohttp",
+    "location": "body",
+    "keyword": ["<title>Home Assistant</title>"]
+  },{
+    "cms": "蓝凌EKP",
+    "location": "faviconhash",
+    "keyword": ["831854882"]
+  },{
+    "cms": "广联达Linkworks",
+    "location": "body",
+    "keyword": ["/Services/Identification/login.ashx"]
+  },{
+    "cms": "惠尔顿网络安全审计系统",
+    "location": "faviconhash",
+    "keyword": ["-1680239099"]
+  },{
+    "cms": "Jeeplus",
+    "location": "body",
+    "keyword": ["Jeeplus"]
+  },{
+    "cms": "Panabit-Panalog",
+    "location": "body",
+    "keyword": ["unamexx"]
+  },{
+    "cms": "NetMizer日志管理系统",
+    "location": "body",
+    "keyword": ["<title>NetMizer 日志管理系统</title>"]
+  },{
+    "cms": "网神SecGate 3600防火墙",
+    "location": "body",
+    "keyword": ["<title>网神SecGate 3600防火墙</title>"]
+  },{
+    "cms": "大华智能物联综合管理平台",
+    "location": "body",
+    "keyword": ["客户端会小于800"]
+  },{
+    "cms": "大华城市安防监控系统平台",
+    "location": "body",
+    "keyword": ["客户端会小于800"]
+  },{
+    "cms": "明源云ERP系统接口管家",
+    "location": "body",
+    "keyword": ["接口管家站点正常!"]
+  },{
+    "cms": "NiuShop开源商城系统",
+    "location": "body",
+    "keyword": ["niushop_url_model!","niushop_rewrite_model"]
+  },{
+    "cms": "金蝶云星空",
+    "location": "faviconhash",
+    "keyword": ["-1629133697"]
+  },{
+    "cms": "Aria2 WebUI",
+    "location": "faviconhash",
+    "keyword": ["587943217"]
+  },{
+    "cms": "孚盟云",
+    "location": "faviconhash",
+    "keyword": ["1533124028"]
+  },{
+    "cms": "奇安信天擎",
+    "location": "faviconhash",
+    "keyword": ["-829652342"]
+  },{
+    "cms": "Yearning",
+    "location": "body",
+    "keyword": ["<title>Yearning</title>"]
+  },{
+    "cms": "DzzOffice",
+    "location": "faviconhash",
+    "keyword": ["-1961736892"]
+  },{
+    "cms": "金蝶EAS",
+    "location": "body",
+    "keyword": ["<title>EAS系统登录</title>"]
+  },{
+    "cms": "SPON世邦IP网络对讲广播系统",
+    "location": "faviconhash",
+    "keyword": ["-1830859634"]
+  },{
+    "cms": "全程云OA",
+    "location": "body",
+    "keyword": ["images/yipeoplehover.png"]
+  },{
+    "cms": "智邦国际ERP系统",
+    "location": "faviconhash",
+    "keyword": ["-682445886"]
+  },{
+    "cms": "西软云XMS",
+    "location": "faviconhash",
+    "keyword": ["-656811182"]
+  },{
+    "cms": "I Doc View",
+    "location": "body",
+    "keyword": ["<title>在线文档预览 - I Doc View</title>"]
+  },{
+    "cms": "KubePi",
+    "location": "body",
+    "keyword": ["<title>KubePi</title>"]
+  },{
+    "cms": "九思OA",
+    "location": "body",
+    "keyword": ["<a class=\"jiusi\""]
+  },{
+    "cms": "海康威视对讲广播系统",
+    "location": "faviconhash",
+    "keyword": ["-1830859634"]
+  },{
+    "cms": "OneBlog",
+    "location": "body",
+    "keyword": ["/assets/js/zhyd.tool.js"]
+  },{
+    "cms": "FreeRDP WebConnect",
+    "location": "body",
+    "keyword": ["css/vkb.css","Advanced session parameters"]
+  },{
+    "cms": "万户OA",
+    "location": "body",
+    "keyword": ["defaultroot","Logon!logon.action","domainAccount"]
+  },{
+    "cms": "EduSoho教培系统",
+    "location": "body",
+    "keyword": ["Powered by <a href=\"http://www.edusoho.com/\" target=\"_blank\">Edusoho"]
+  },{
+    "cms": "电信网关配置管理系统",
+    "location": "body",
+    "keyword": ["img/login_bg3.png"]
+  },{
+    "cms": "铭飞MCMS",
+    "location": "body",
+    "keyword": ["铭飞MCMS","/mdiy/formData/save.do","static/plugins/ms/1.0.0/ms.js"]
+  },{
+    "cms": "绿盟SAS堡垒机",
+    "location": "body",
+    "keyword": ["'/needUsbkey.php'","/login_logo_sas_h_zh_CN.png"]
+  },{
+    "cms": "OfficeWeb365",
+    "location": "body",
+    "keyword": ["请输入furl参数"]
+  },{
+    "cms": "Logbase运维安全管理系统",
+    "location": "body",
+    "keyword": ["<title>Logbase运维安全管理系统</title>"]
+  },{
+    "cms": "奥威亚教学视频应用云平台",
+    "location": "body",
+    "keyword": ["/Upload/DomainInfo/MaxAVALogo.png'"]
+  },{
+    "cms": "红海云eHR",
+    "location": "body",
+    "keyword": ["/RedseaPlatform/skins/images/favicon.ico"]
+  },{
+    "cms": "PbootCMS",
+    "location": "faviconhash",
+    "keyword": ["951530696"]
+  },{
+    "cms": "宇视科技视频监控",
+    "location": "faviconhash",
+    "keyword": ["-1240222446"]
+  },{
+    "cms": "锐捷EWEB网管系统",
+    "location": "body",
+    "keyword": ["<title>锐捷网络-EWEB网管系统</title>"]
+  },{
+    "cms": "智跃人力资源管理系统",
+    "location": "body",
+    "keyword": ["身份验证 - 智跃HR"]
+  },{
+    "cms": "润申信息企业标准化管理系统",
+    "location": "body",
+    "keyword": ["<title>企业标准化管理系统</title>"]
+  },{
+    "cms": "建文工程项目管理软件",
+    "location": "body",
+    "keyword": ["建文工程项目管理软件"]
+  },{
+    "cms": "海康威视iVMS综合安防系统",
+    "location": "body",
+    "keyword": ["/views/home/filelinstallPackage.rar"]
+  },{
+    "cms": "GitLab",
+    "location": "body",
+    "keyword": ["GitLab</title>"]
+  },{
+    "cms": "NginxWebUI",
+    "location": "body",
+    "keyword": ["<title>nginxWebUI</title>"]
+  },{
+    "cms": "脸爱云一脸通智慧管理平台",
+    "location": "body",
+    "keyword": ["脸爱云 一脸通智慧管理平台"]
+  },{
+    "cms": "疑似后台",
+    "location": "title",
+    "keyword": ["后台"]
+  },{
+    "cms": "Spring-Framework",
+    "location": "body",
+    "keyword": ["org.springframework.web.servlet.i18n.cookielocaleresolver.locale=", "<h1>whitelabel error page</h1>"]
+  }, {
+    "cms": "疑似登陆页面",
+    "location": "body",
+    "keyword": ["登录"]
+  },{
+    "cms": "spring-boot",
+    "location": "faviconhash",
+    "keyword": ["116323821"]
+  }
+  ]
+}

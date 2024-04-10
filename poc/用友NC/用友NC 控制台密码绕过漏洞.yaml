@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 用友NC 控制台密码绕过漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /uapws/
+  headers:
+response1:
+  headers:
+  body: <title>WS-Console</title>
+  code:
+requests2:
+response2:

