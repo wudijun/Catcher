@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 用友NCCloud FS文件管理登录页面(sql注入)
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /fs/
+  headers:
+response1:
+  headers:
+  body: 文件服务器
+  code:
+requests2:
+response2:

