@@ -72,7 +72,7 @@ PocResults.txt: 漏洞测试的结果
 
 Ports.txt: 端口扫描结果
 
-![image-20240410104036977](C:\Users\crazy_\AppData\Roaming\Typora\typora-user-images\image-20240410104036977.png) 
+
 
 在查看结果时推荐使用sublime等编译器打开查看，文本文档直接打开不太友好
 
@@ -84,12 +84,13 @@ Ports.txt: 端口扫描结果
 
 对多个资产、单个资产进行批量的泛微OA、用友OA等漏洞验证也是不错的选择
 
-![10]([D:\tools\catcher-github\image\10.png](https://github.com/wudijun/Catcher/blob/master/image/10.png)) 
+![10](https://github.com/wudijun/Catcher/blob/master/image/10.png) 
 
-![9]([D:\tools\catcher-github\image\9.png](https://github.com/wudijun/Catcher/blob/master/image/9.png)) 
+![9](https://github.com/wudijun/Catcher/blob/master/image/9.png) 
 
+# 更新
+2024-5-23
+新增几十条poc以及部分指纹，优化输出结果的显示使其更加友好
 
 ## 参考优秀项目
-
->>>>>>> 9f73d6455d485e9cffa6c3bcd706245d05d8ed60
 EHole：https://github.com/EdgeSecurityTeam/EHole
