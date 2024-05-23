@@ -45,12 +45,12 @@ func main() {
 
 	//指纹识别，poc测试
 	finger.Http_thread(domains)
-	////判断是否cdn
-	//cdndomains := cdncheck.CdnCheck(domains)
-	////将未使用cdn进行ip获取
-	//iplist := cdncheck.Getip(cdndomains)
-	////将获取到的ip进行去重
-	//cdncheck.UniqueSortedIPs(iplist)
+	//判断是否cdn
+	cdndomains := cdncheck.CdnCheck(domains)
+	//将未使用cdn进行ip获取
+	iplist := cdncheck.Getip(cdndomains)
+	//将获取到的ip进行去重
+	cdncheck.UniqueSortedIPs(iplist)
 	red := "\033[31m"
 	reset := "\033[0m"
 	text := "此次结果保存在/results/" + finger.TimestampStr + "下"
