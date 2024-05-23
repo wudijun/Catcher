@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Catcher(捕手)
 
 最近在学习golang所以写了这个工具
@@ -17,7 +16,7 @@ Catcher(捕手) 重点系统指纹漏洞验证工具，适用于外网打点，�
 
 工具目录如下
 
-![2](D:\tools\catcher-github\image\2.png) 
+![2](https://github.com/wudijun/Catcher/blob/master/image/2.png) 
 
 domain.txt: 需要进行测试的域名（可直接写入ip和端口的形式如1.1.1.1:80，也可写url: https://www.xxx.com的形式，也可直接写域名www.xxx.com）
 
@@ -33,19 +32,19 @@ poc : poc文件
 
 1.Catcher首先会对域名通过finger.json文件进行指纹识别
 
-![3](D:\tools\catcher-github\image\3.png)
+![3](https://github.com/wudijun/Catcher/blob/master/image/3.png)
 
 2.识别成功后会进入poc文件下去找具体对应的poc进行测试
 
 比如识别到的指纹为Atlassian Confluence，那么就会进入到 poc文件下的Atlassian Confluence文件下，去运行该文件中所有的poc文件
 
-![4](D:\tools\catcher-github\image\4.png) 
+![4](https://github.com/wudijun/Catcher/blob/master/image/4.png) 
 
  Catcher中内置了许多用于漏洞验证的poc
 
-![5](D:\tools\catcher-github\image\5.png) 
+![5](https://github.com/wudijun/Catcher/blob/master/image/5.png) 
 
-![6](D:\tools\catcher-github\image\6.png) 
+![6](https://github.com/wudijun/Catcher/blob/master/image/6.png) 
 
 后续会继续更新指纹以及poc
 
@@ -55,7 +54,7 @@ poc : poc文件
 
 5.运行结束后会将结果保存到results文件下
 
-![7](D:\tools\catcher-github\image\7.png) 
+![7](https://github.com/wudijun/Catcher/blob/master/image/7.png) 
 
 该文件下有7个文件 
 
@@ -77,7 +76,7 @@ Ports.txt: 端口扫描结果
 
 在查看结果时推荐使用sublime等编译器打开查看，文本文档直接打开不太友好
 
-![8](D:\tools\catcher-github\image\8.png)
+![8](https://github.com/wudijun/Catcher/blob/master/image/8.png)
 
 除了对多个域名进行指纹识别漏洞验证
 
@@ -85,9 +84,9 @@ Ports.txt: 端口扫描结果
 
 对多个资产、单个资产进行批量的泛微OA、用友OA等漏洞验证也是不错的选择
 
-![10](D:\tools\catcher-github\image\10.png) 
+![10]([D:\tools\catcher-github\image\10.png](https://github.com/wudijun/Catcher/blob/master/image/10.png)) 
 
-![9](D:\tools\catcher-github\image\9.png) 
+![9]([D:\tools\catcher-github\image\9.png](https://github.com/wudijun/Catcher/blob/master/image/9.png)) 
 
 
 
