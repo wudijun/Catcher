@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: WVP-GB28181摄像头管理平台user信息泄露漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /api/user/all
+response1:
+  headers:
+  body: username
+  code: 200
+requests2:
+response2:

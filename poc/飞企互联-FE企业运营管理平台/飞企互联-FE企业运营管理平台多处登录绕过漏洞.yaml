@@ -1,0 +1,16 @@
+id:
+
+info:
+  name: 金蝶EAS pdfviewlocal 任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /loginService.fe?op=D
+response1:
+  body: 流程未开始或被修改
+  code: 200
+requests2:
+response2:

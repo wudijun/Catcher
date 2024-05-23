@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 致远OA A8 存在默认密码漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /seeyon/management/index.jsp
+  headers:
+  data:
+response1:
+  headers:
+  body: Password
+  code: 200
+requests2:
+response2:

