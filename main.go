@@ -6,6 +6,7 @@ import (
 	"os"
 	"strings"
 	"test/finger"
+	"test/cdncheck"
 )
 
 func main() {
