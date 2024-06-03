@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strings"
+	"test/requestpoc"
 )
 
 type Fingerprint struct {
