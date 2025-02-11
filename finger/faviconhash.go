@@ -13,6 +13,7 @@ import (
 	"github.com/twmb/murmur3"
 )
 
+// test
 func Mmh3Hash32(raw []byte) string {
 	var h32 hash.Hash32 = murmur3.New32()
 	_, err := h32.Write([]byte(raw))

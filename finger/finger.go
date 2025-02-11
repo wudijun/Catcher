@@ -25,6 +25,7 @@ var count int
 
 func processFingerprint(fp Fingerprint, domain string, title string, htmlContent string, htmlheaders http.Header, code int, length int, icoHash string, req string) {
 	//defer wg.Done()
+	//cccccc
 	if title == "" {
 		title = "空"
 	}
