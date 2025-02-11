@@ -18,6 +18,7 @@ var (
 
 const maxConcurrentIPScans = 10
 
+// ccccc
 func Cdn(domain string) (bool, string) {
 	file_nocdn, err := os.OpenFile("results/"+finger.TimestampStr+"/NoCdn.txt", os.O_RDWR|os.O_APPEND|os.O_CREATE, 0666)
 	if err != nil {
