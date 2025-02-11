@@ -1,6 +1,6 @@
 id:
 info:
-  name: Jeecg commonController 任意文件上传漏洞
+  name: JeecgBoot commonController 任意文件上传漏洞
   severity:
   description:
   details:

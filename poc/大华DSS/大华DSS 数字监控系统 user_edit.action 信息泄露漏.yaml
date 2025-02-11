@@ -1,0 +1,16 @@
+id:
+
+info:
+  name: 大华DSS 数字监控系统 user_edit.action 信息泄露漏
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /admin/cascade_/user_edit.action?id=1
+response1:
+  body: loginPass
+  code: 200
+requests2:
+response2:

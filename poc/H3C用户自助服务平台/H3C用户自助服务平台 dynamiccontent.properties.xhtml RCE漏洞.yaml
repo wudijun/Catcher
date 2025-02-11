@@ -16,6 +16,6 @@ requests1:
 response1:
   headers:
   body: root
-  code:
+  code: 200
 requests2:
 response2:

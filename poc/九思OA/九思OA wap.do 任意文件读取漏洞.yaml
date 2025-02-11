@@ -14,6 +14,6 @@ requests1:
 response1:
   headers:
   body: WEB-INF
-  code:
+  code: 200
 requests2:
 response2:

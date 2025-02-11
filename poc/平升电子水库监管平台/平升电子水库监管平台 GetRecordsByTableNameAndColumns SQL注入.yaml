@@ -1,0 +1,19 @@
+id:
+info:
+  name: 平升电子水库监管平台 GetRecordsByTableNameAndColumns SQL注入
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /Webservices/UserAdminService.asmx/Login
+  headers:
+  data: |
+    LoginName=Data86&LoginPwd=Data86%40
+response1:
+  headers:
+  body: Guid
+  code:
+requests2:
+response2:

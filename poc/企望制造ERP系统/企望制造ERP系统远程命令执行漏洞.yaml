@@ -19,7 +19,7 @@ requests1:
 response1:
   headers:
   body: data
-  code:
+  code: 200
 requests2:
 response2:
 

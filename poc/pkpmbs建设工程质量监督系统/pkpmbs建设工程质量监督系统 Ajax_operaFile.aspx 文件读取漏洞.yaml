@@ -11,7 +11,7 @@ requests1:
   path: /Applications/BaseInfos/System/Ajax_operaFile.aspx?method=readLocalFile&path=/Applications/BaseInfos/System/Ajax_operaFile.aspx
 response1:
   headers:
-  body:
+  body: true
   code: 200
 requests2:
 response2:

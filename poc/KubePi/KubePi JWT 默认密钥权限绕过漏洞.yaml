@@ -19,6 +19,6 @@ requests1:
 response1:
   headers:
   body: uuid
-  code:
+  code: 200
 requests2:
 response2:
