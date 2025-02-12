@@ -13,7 +13,6 @@ import (
 	"github.com/twmb/murmur3"
 )
 
-// test
 func Mmh3Hash32(raw []byte) string {
 	var h32 hash.Hash32 = murmur3.New32()
 	_, err := h32.Write([]byte(raw))
@@ -64,6 +63,7 @@ func favicohash(host string) string {
 			//log.Println("favicon file read error: ", err)
 			return "0"
 		}
+		//fmt.Printf(Mmh3Hash32(StandBase64(body)))
 		return Mmh3Hash32(StandBase64(body))
 	} else {
 
