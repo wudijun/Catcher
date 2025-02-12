@@ -14,6 +14,12 @@ Catcher(捕手) 重点系统指纹漏洞验证工具，适用于外网打点，�
 
 ## 0x01: 使用
 
+命令行运行
+
+根据个人需求：-f为进行指纹识别，-p为对识别出存在poc的指纹进行漏洞扫描，-d为指定域名的文件
+
+Catcher -f -p -d domain.txt
+
 工具目录如下
 
 ![2](https://github.com/wudijun/Catcher/blob/master/image/2.png) 
@@ -25,8 +31,6 @@ finger.json: 指纹文件
 poc : poc文件
 
 
-
-使用时直接通过命令行运行Catcher.exe即可，不需要使用任何参数
 
 ## 0x02: 流程
 
@@ -64,9 +68,9 @@ NoCdn.txt: 没有使用cdn的域名
 
 ErrorCdn.txt: 未判断出是否使用cdn的域名
 
-Finger.json: 指纹识别到的域名
+Finger.xlsx: 指纹识别到的域名
 
-NoFinger.json: 未指纹识别到的域名
+NoFinger.xlsx: 未指纹识别到的域名
 
 PocResults.txt: 漏洞测试的结果
 
@@ -74,7 +78,8 @@ Ports.txt: 端口扫描结果
 
 
 
-在查看结果时推荐使用sublime等编译器打开查看，文本文档直接打开不太友好
+
+生成的Finger.xlsx和NoFinger.xlsx为表格的形式方便查看
 
 ![8](https://github.com/wudijun/Catcher/blob/master/image/8.png)
 
@@ -91,6 +96,9 @@ Ports.txt: 端口扫描结果
 # 更新
 2024-5-23
 新增几十条poc以及部分指纹，优化输出结果的显示使其更加友好
+
+2025-2-15
+采用命令行形式供用户自行选择是否进行poc测试，将生成的结果文件改为表格，新增指纹和poc
 
 ## 参考优秀项目
 EHole：https://github.com/EdgeSecurityTeam/EHole
