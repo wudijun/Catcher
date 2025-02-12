@@ -20,6 +20,8 @@ Catcher(捕手) 重点系统指纹漏洞验证工具，适用于外网打点，�
 
 Catcher -f -p -d domain.txt
 
+![11](https://github.com/wudijun/Catcher/blob/master/image/11.png) 
+
 工具目录如下
 
 ![2](https://github.com/wudijun/Catcher/blob/master/image/2.png) 
