@@ -428,7 +428,7 @@
     "location": "body",
     "keyword": ["org.springframework.web.servlet.i18n.cookielocaleresolver.locale=", "<h1>whitelabel error page</h1>"]
   }, {
-    "cms": "疑似登陆页面",
+    "cms": "疑似存在登陆功能",
     "location": "body",
     "keyword": ["登录"]
   },{
@@ -1059,6 +1059,14 @@
     "cms": "以柔资讯-D-Security终端文件保护系统",
     "location": "title",
     "keyword": ["D-Security","WNJsoft","W&Jsoft"]
+  },{
+    "cms": "tenda路由器",
+    "location": "title",
+    "keyword": ["Tenda | LOGIN"]
+  },{
+    "cms": "骑士74CMS",
+    "location": "body",
+    "keyword": ["content=\"74cms.com\""]
   }
   ]
 }
