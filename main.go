@@ -15,10 +15,9 @@ import (
 func customUsage() {
 	// 打印参数说明
 	fmt.Println("Usage:")
-	fmt.Println("  -f  是否执行指纹识别")
 	fmt.Println("  -p  是否进行poc测试")
 	fmt.Println("  -d  指定读取的文件路径，默认为domain.txt")
-	fmt.Println("  example : -f -p -d domain.txt")
+	fmt.Println("  example : Catcher -p -d domain.txt")
 }
 
 func main() {
@@ -33,7 +32,6 @@ func main() {
 	fmt.Print("\033[0m") // 重置颜色
 
 	// 定义命令行参数
-	fFlag := flag.Bool("f", false, "是否执行指纹识别")
 	dFlag := flag.String("d", "domain.txt", "指定读取的文件路径")
 	pFlag := flag.Bool("p", false, "是否要进行poc测试") // 使用 bool 类型
 
@@ -71,25 +69,22 @@ func main() {
 		log.Fatal("Error scanning file:", err)
 	}
 
-	// 根据 -f 标志执行指纹识别
-	if *fFlag {
-		fmt.Print("\033[31m")
-		fmt.Println("执行指纹识别...")
-		fmt.Print("\033[0m")
+	fmt.Print("\033[31m")
+	fmt.Println("执行指纹识别...")
+	fmt.Print("\033[0m")
+	finger.Http_thread(domains)
 
-		finger.Http_thread(domains)
-		if *pFlag {
-			fmt.Print("\033[31m")
-			fmt.Println("执行POC...")
-			fmt.Print("\033[0m")
-		}
-		//判断是否cdn
-		cdndomains := cdncheck.CdnCheck(domains)
-		//将未使用cdn进行ip获取
-		iplist := cdncheck.Getip(cdndomains)
-		//将获取到的ip进行去重
-		cdncheck.UniqueSortedIPs(iplist)
+	if *pFlag {
+		fmt.Print("\033[31m")
+		fmt.Println("执行POC...")
+		fmt.Print("\033[0m")
 	}
+	//判断是否cdn
+	cdndomains := cdncheck.CdnCheck(domains)
+	//将未使用cdn进行ip获取
+	iplist := cdncheck.Getip(cdndomains)
+	//将获取到的ip进行去重
+	cdncheck.UniqueSortedIPs(iplist)
 
 	// 输出结果
 	red := "\033[31m"
