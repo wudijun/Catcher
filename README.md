@@ -16,9 +16,9 @@ Catcher(捕手) 重点系统指纹漏洞验证工具，适用于外网打点，�
 
 命令行运行
 
-根据个人需求：-f为进行指纹识别，-p为对识别出存在poc的指纹进行漏洞扫描，-d为指定域名的文件
+根据个人需求：-p为对识别出存在poc的指纹进行漏洞扫描，-d为指定域名的文件
 
-Catcher -f -p -d domain.txt
+Catcher -p -d domain.txt
 
 ![11](https://github.com/wudijun/Catcher/blob/master/image/11.png) 
 
